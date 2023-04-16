@@ -1,97 +1,203 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500&family=Fira+Sans:wght@400;500&family=Kosugi+Maru&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500&family=Fira+Sans:wght@400;500&family=Iosevka&display=swap');
+
+:root {
+    font-size: 25px;
+    --fg: 211, 211, 215;
+    --font-main: "Iosevka", sans-serif;
+    --font-second: "Space Grotesk", monospace;
+}
+
+* {
+    box-sizing: border-box;
+}
+
 body {
-    user-select: none;
-    color: #eee;
-    margin: 0;
-    padding: 0;
-    font-family: "Arial";
-    font-weight: 400;
-    height: 100vh;
-    background: #14323d;
-}
-main {
-    height: 450px;
-    position: sticky;
-}
-.center {
-    width: 100%;
-    display: block;
-    text-align: center;
-    margin-top: 45px;
-    margin-bottom: 12vh;
-}
-.title {
-    user-select: none;
-    width: 100%;
-    text-align: center;
-    font-size: 58px;
-}
-.odkaz {
-    display: inline-block;
-    color: #aaa;
-    margin-left: 12px;
-    margin-right: 12px;
-    text-decoration: none;
-    padding: 0px 15px;
-    transition: 500ms;
-}
-.odkaz:hover {
-    color: #aaa;
-    background: #06060680;
-    border-radius: 5px;
-
-}
-
-.element {
     height: 100%;
+    min-height: 100vh;
+    color: rgb(var(--fg));
+    background: url("background.svg") no-repeat center;
+    background-size: cover;
+    margin: 0;
+    padding: 0.5em;
+    font-family: var(--font-main);
+}
+
+.first {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 0;
+}
+
+.first .text {
+    padding: 1rem 0;
+    font-family: var(--font-second);
+    width: 100%;
+    font-size: 2.5em;
+    letter-spacing: 0.03em;
+    font-weight: bold;
+}
+
+.first .quick {
+    /* width: 100%; */
+    max-width: 600px;
+    align-self: center;
+    display: flex;
+    gap: 0.5em;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.first .quick .link {
+    text-decoration: none;
+    user-select: none;
+    cursor: pointer;
+    height: fit-content;
+    font-size: 1em;
+    background: #272637;
+    border-radius: 0.2em;
+    padding: 0.5em 1em;
+    transition: 200ms;
+    border-bottom: #0004 0.25em solid;
+    position: relative;
+    transition: 200ms;
+    bottom: 0;
+}
+
+.first .quick .link:hover {
+    /* padding: 1em; */
+    /* background: rgb(57, 93, 93); */
+    color: #fff;
+    bottom: 0.25em;
+
+}
+
+.bigwidget {
+    position: relative;
+    width: 100%;
+    background: #0004;
+    height: 100%;
+    padding: 0.5em;
+    border-radius: 0.25em;
+}
+
+a {
+    color: unset;
+}
+
+.sel {
+    color: #7f7ab8;
+    font-weight: 500;
+}
+
+.bigwidget.contribute::before {
+    content:"Spolupráce";
+    position: absolute;
+    bottom: 100%;
+    right: 0;
+    padding: 0.2em 0.5em;
+    background: #0004;
+}
+
+.bigwidget.contribute {
+  display: block;
+}
+
+.bigwidget.center {
+    display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    text-align: start;
 }
-.mini-title {
-    font-size: 36px;
-    margin-left: 32px;
-    margin-top: 12px;
-}
-.buttons {
-    margin-bottom: 24px;
-    margin-top: 3px;
-    font-size: 23px;
-    color: rgb(223, 223, 223);
-    margin-left: 42px;
-}
-.buttons a {
-    display: inline-block;
-    width: 100%;
 
+.bottomgap {
+    margin-bottom: 3rem;
 }
-.buttons a button {
-    text-align: start;
-    margin-bottom: 5px;
-    transition: 500ms;
-    cursor: pointer;
+
+body > .projects::before {
+    content:"Projekty";
+    position: absolute;
+    bottom: 100%;
+    right: 0;
+    padding: 0.2em 0.5em;
+    background: #0004;
+}
+
+body > .projects {
+    position: relative;
+    width: 100%;
+    background: #0004;
+    height: 100%;
+    padding: 0.5em;
+    border-radius: 0.25em;
+}
+
+
+body > .projects .category .title {
+    font-size: 1.25em;
     font-weight: 500;
-    font-size: 28px;
-    color: rgb(214, 67, 67);
-    background: none;
-    padding-left: 7px;
-    padding-right: 7px;
-    border: none;
-    border-radius: 5px;
+    padding-bottom: 0.5rem;
+
+    font-family: var(--font-second);
 }
 
-.buttons a button:hover {
-    color: #aaa;
-    background: #030303;
+
+body > .projects .category > .projects {
+    gap: 0.3em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-bottom: 2em;
+    justify-content: start;
 }
-.odkazy {
-    font-size: 48px;
-    text-align: center;
-}
-.spodek {
-    margin-top: 35px;
-    position: sticky;
-    background: #10101038;
+
+body > .projects .category > .projects .project {
+    padding: 0.4em 0.75em;
+    cursor: pointer;
+    color: rgba(var(--fg),80%);
+    border-radius: 0.25em;
     display: inline-block;
+    text-decoration: none;
+
+    border-bottom: #0004 0.3em solid;
+    background: #201f23;
+    transition: 200ms;
+    position: relative;
+    transition: 200ms;
+    bottom: 0;
+}
+
+body > .projects .category > .projects .project:hover {
+    bottom: 0.25em;
+}
+
+
+
+
+@media (max-width: 650px) {
+    :root {
+        font-size: 22px;
+    }
+
+    .first .quick .link {
+        font-size: 1.25em;
+    }
+
+    body > .projects .category > .projects { 
+        justify-content: center;
+    }
+
+    body > .projects .category > .projects .project {
+        padding: 0.7em 0.75em;
+        font-size: 1.2em;
+        /* font-size: 1.1em; */
+    }
+}
+
+
+footer {
+    margin-top: 3em;
     width: 100%;
+    text-align: center;
+    font-family: var(--font-second);
 }
