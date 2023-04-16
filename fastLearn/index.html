@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fast Learn</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        var otazky = [
+        ]
+        let text = ""
+        let idTed = ""
+        function chng() {
+            document.getElementById("helper").style.display = "block"
+            text = document.getElementById("otazka" + idTed).value
+            document.getElementById("helper").innerHTML = text
+        }
+
+        function lengthOtazky() {
+            let res = 0
+            try {
+                res = otazky.length
+            } catch(error) {
+                res = 0
+            }
+            return res
+        }
+        function reloadOtazky() {
+            try {
+                localStorage.setItem("fastLearn_otazky", JSON.stringify(otazky))
+            } catch(error) {
+                console.log(error)
+            }
+            document.getElementById("otazky").innerHTML = ""
+            if (!otazky || otazky.length == 0) {
+                let txt = `
+                <div class="otazka nicTuNeniOtazka">
+                    <span class="nicTuNeni">zatím tu nic není...</span>
+                </div>
+                `
+                document.getElementById("otazky").innerHTML += txt
+            }
+            for (let i = 0; i < (lengthOtazky()); i++) {
+                let txt =
+                    `
+                <div class="otazka">
+                <input type="text" id="otazka${i}" class="otazkaInput" oninput="inp('${i}')" value="${otazky[i]}">
+                <div class="smazat"><span onclick="removeOtazka('${i}')" class="material-symbols-outlined">delete</span></div>
+            </div>
+                `
+                document.getElementById("otazky").innerHTML += txt
+            }
+            if (lengthOtazky() !== 0) {
+                document.getElementById("otazky").innerHTML += `
+                <div class="rozdelovac"></div>
+
+`
+
+            }
+            document.getElementById("otazky").innerHTML += `
+
+            <div class="otazka">
+                <input type="text" placeholder="Napiš otázku kterou chceš přidat..." id="input">
+                <div class="smazat"><span onclick="addOtazka()" class="material-symbols-outlined add">add</span></div>
+            </div>
+            `
+        }
+        function inp(id) {
+            idTed = id
+            otazky[idTed]=document.getElementById("otazka"+idTed.toString()).value
+            localStorage.setItem("fastLearn_otazky", JSON.stringify(otazky))
+            chng()
+        }
+        window.onload = () => {
+
+            otazky = JSON.parse(localStorage.getItem("fastLearn_otazky"))
+            if(!otazky) otazky = []
+            for (let i = 0; i < document.getElementsByClassName("otazkaInput").length; i++) {
+
+                document.getElementsByClassName("otazkaInput").item(i).addEventListener("focusout", () => {
+                    document.getElementById("helper").style.display = "none"
+                });
+                document.getElementsByClassName("otazkaInput").item(i).onfocus = (b) => {
+                    idTed = b.target.attributes[1].value.replace("otazka", "")
+                    chng()
+                }
+            }
+            reloadOtazky()
+        }
+        function removeOtazka(e) {
+            e = parseInt(e)
+            otazky.splice(e, 1)
+            reloadOtazky()
+        }
+
+        function addOtazka() {
+            otazky.push(document.getElementById("input").value)
+            document.getElementById("input").value = ""
+            reloadOtazky()
+        }
+    </script>
+</head>
+
+<body>
+    <div class="helper up-uplne" id="helper">
+        Víš kdo byl přemysl otakar 2. ?
+    </div>
+    <main>
+
+        <header>
+            <span class="title">Fast Learn</span>
+            <br>
+            <span class="title2">nauč se na test rychle!</span>
+        </header>
+        <br>
+        <div class="otazky" id="otazky">
+            <div class="otazka">
+                <input type="text" id="otazka1" class="otazkaInput" oninput="inp('1')">
+                <div class="smazat"><span onclick="removeOtazka('1')" class="material-symbols-outlined">delete</span>
+                </div>
+            </div>
+
+            <div class="otazka">
+                <input type="text" id="otazka2" class="otazkaInput" oninput="inp('2')">
+                <div class="smazat"><span onclick="removeOtazka('2')" class="material-symbols-outlined">delete</span>
+                </div>
+            </div>
+
+            <div class="otazka">
+                <input type="text" id="otazka3" class="otazkaInput" oninput="inp('3')">
+                <div class="smazat"><span onclick="removeOtazka('3')" class="material-symbols-outlined">delete</span>
+                </div>
+            </div>
+            <div class="rozdelovac"></div>
+            <div class="otazka">
+                <input type="text" placeholder="Napiš otázku kterou chceš přidat..." id="input">
+                <div class="smazat"><span onclick="addOtazka()" class="material-symbols-outlined add">add</span></div>
+            </div>
+        </div>
+        <br>
+        <div class="down-uplne">
+            <div class="otazkyui">
+                <a href="otazka.htm"><button class="next" title="A.K.A vygenerovat stránku kde budeš odpovídat na otázky">Pokračovat na
+                    test</button></a>  
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+body {
+
+    margin: 0;
+    padding: 0;
+    background: rgb(27, 28, 65);
+    color: #fff;
+    text-align: center;
+    font-family: "Roboto";
+}
+.element {
+    margin-bottom: 34px;
+}
+.app {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    display: flex;
+    place-content: center;
+}
+.title {
+    font-size: 32px;
+    width: 100%;
+    color: rgb(238, 238, 238);
+}
+.odkazy {
+    background: rgb(156, 178, 209);
+    border-radius: 6px;
+    border: rgb(18, 19, 44) 6px solid;
+    width: 60%;
+}
+.odkazy ul {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.oddelovac {
+    height: 6px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.021);;
+}
+.oddelovac-2 {
+    height: 21px;
+    width: 100%;
+    background: rgba(78, 78, 78, 0.062);
+}
+.odkazy ul li button {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    transition: 0.7s;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    background: rgb(156, 178, 209);
+    font-size: 32px;
+}
+
+.odkazy ul li button:hover {
+    background: rgb(236, 234, 255);
+}
+
+.odkazy ul li button a {
+    font-family: "Roboto";
+    color: rgb(0, 0, 0);
+}
+
+a {
+    text-decoration: none;
+}

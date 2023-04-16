@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fast Learn</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style3.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        let odpovedi = []
+        window.onload = () => {
+            try {
+                odpovedi = JSON.parse( localStorage.getItem("fastLearn_otazky2"))
+            } catch (err) {
+                odpovedi = []
+                console.log(err)
+            }
+            let serazeno = odpovedi.sort((a,b)=>{
+                a = parseInt(a[0])
+                b = parseInt(b[0])
+                return a-b
+            })
+            let rn = "1"
+            for(let i=0;i<serazeno.length;i++) {
+                if(odpovedi[i][1] !== undefined) {
+                    if(rn!==serazeno[i][0]) {
+                        document.getElementById("otazky").innerHTML+=
+                    `
+                    <div class="rozd"></div><br>
+                    `
+                        rn = serazeno[i][0]
+                    }
+                    document.getElementById("otazky").innerHTML+=
+                    `
+                    <div class="otazka c${rn}">${odpovedi[i][1]}</div><br>
+                    `
+                }
+               
+                
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <main>
+
+        <header>
+            <span class="title">Fast Learn</span>
+            <br>
+            <span class="title2">Výsledky testu</span>
+        </header>
+        <br>
+        <div class="otazky" id="otazky">
+            
+        </div>
+        <br>
+        <div class="down-uplne">
+            <div class="otazkyui">
+                <a href="otazka.htm"><button class="next" title="A.K.A vygenerovat stránku kde budeš odpovídat na otázky">Restartovat
+                    test</button></a>  
+                    
+                <a href="./"><button class="next">Vrátit se domů</button></a> 
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

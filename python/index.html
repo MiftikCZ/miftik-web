@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script data-ad-client="ca-pub-1291906990533292" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta name="description" content="Oficiální web MiftikaCZ">
+    <meta name="keywords" content="jak se naucit python,.py navod,navod na python,python cz sk tutorial,python tutorial cz,python tutorial miftikcz,tutorial python cz,python tutorial sk">
+    <meta name="theme-color" content="#594fee">
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.4.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+
+        
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+
+    <link rel="stylesheet" href="python/python.css">
+    <title>Jak se naučit programovat v pythonu ?</title>
+</head>
+<body>
+    <div class="oddelovac-2"></div>
+    <h1 class="title">Jak se naučit programovat v pythonu ?</h1>
+    <main>
+        <div class="krok">
+<h2 class="title-kroku">Základy</h2>
+<pre class="pre">
+<code class="language-python"># Jak napsat něco
+
+print("Ahoooj")
+
+# Ahoooj</code>
+</pre>
+<pre class="pre">
+<code class="language-python"># Jak používat proměněný
+
+jmeno = "MiftikCZ"
+print(jmeno)
+
+# MiftikCZ</code>
+</pre>
+<pre class="pre">
+<code class="language-python"># Matika
+
+print(5 + 5)
+
+# 10</code>
+</pre>
+<pre class="pre">
+<code class="language-python"># Jak získat to co člověk napsal
+
+zprava = input("Sem něco napiš: ")
+print(zprava)
+
+# Napíše to, to co člevěk napsal do console</pre>
+</code>
+<pre class="pre">
+<code class="language-python"># Jak odeslat zprávu s více řádky
+
+print("řádek 1\nřádek 2\nřádek 3")
+
+# řádek 1
+# řádek 2
+# řádek 3</code>
+</pre>
+<pre class="pre">
+<code class="language-python">
+# Jak připojit ke zprávě něco
+jmeno = "MiftikCZ"
+print(f"Jmenuji se {jmeno} :D")
+# Jmenuji se MiftikCZ :D
+
+</pre>
+</code>
+<pre class="pre">
+<code class="language-python">
+jmeno = "MiftikCZ"
+print("Jmenuji se ", jmeno, " :D")
+# Jmenuji se MiftikCZ :D
+
+</pre>
+</code>
+</div>
+        <div class="oddelovac-2"></div>
+        <div class="krok">
+            <h2 class="title">Užitečné věci</h2>
+<pre class="pre">
+<code class="language-python">
+# Funkce
+def plus(a, b):
+    return a + b
+
+print(1, 3)
+# 4
+
+
+
+# Funkce2
+def plus(a, b):
+    return a + b
+
+def napis(text):
+    print(text)
+
+napis( plus(3,3) )
+# 6
+
+
+
+# Opakování pomocí range
+for i in range(0,6):
+    print(i)
+# 6 je tam protože je to 012345 a to je 6 čísel 
+# Napíše to všechny čísla od 0 až do 5
+
+
+
+# Opakování pomocí while
+i = 0
+while i < 6:
+    print(i)
+    i = i + 1
+# 6 je tam protože je to 012345 a to je 6 čísel 
+# Zase to napíše to všechny čísla od 0 až do 5
+
+
+
+# Class
+# Class fungují jako větší proměněné
+class Pepa:
+    vek = 15
+    jmeno = "Pepa Rychlý"
+    trida = "9.B"
+    oblibenaHra = "Minecraft"
+    nejlepsiKamarad = "Honza"
+
+print(Pepa.trida)
+Pepa.trida = "9.A"
+print(Pepa.trida)
+# Jako první to napíše 9.B potom to napíše 9.A
+
+
+
+# If, Else
+test = "uspesny"
+if test == "uspesny":
+    print("Výborně!")
+elif test == "neuspesny":
+    print("Škoda :(")
+else:
+    print("Zatím nevíme jestli byl test úspešný !")
+# Napíše to "Výborně!"
+
+
+
+# Arrays
+kamaradi = ["Pepa", "Honza", "Tomáš Chytrý"]
+print(kamaradi)
+# ["Pepa", "Honza", "Tomáš"]
+
+print(kamaradi[0])
+# "Pepa"
+
+print(kamaradi[1])
+# "Honza"
+
+print(len(kamaradi))
+# 3, protože "kamaradi" obsahuje 3 slova
+
+print(kamaradi[len(kamaradi)-1])
+# Napíše to poslední slovo z "kamaradi", takže to napíše "Tomáš Chytrý"
+# -1 protože "kamarádi" jsou [0,1,2], proto místo 3 tam musí být 2
+</pre>
+</code>
+        </div>
+        <div class="oddelovac-2"></div>
+        <div class="krok">
+            <h2 class="title">Basic kalkulačka</h2>
+<pre class="pre">
+<code class="language-python">
+cislo1 = int(input("Napiš první číslo: "))
+znamenko = input("Napiš znaménko: ")
+cislo2 = int(input("Napiš druhé číslo: "))
+# int() je tu protože pracujeme s čísly
+
+if cislo1 == "":
+    print("Do prvního čísla jsi nic nenapsal!")
+
+if cislo2 == "":
+    print("Do druhého čísla jsi nic nenapsal!")
+
+if znamenko == "":
+    print("Do znaménka jsi nic nenapsal!")
+
+def krat(a, b):
+    print(f"Výsledek je {a * b} !")
+
+def plus(a, b):
+    print(f"Výsledek je {a + b} !")
+
+def minus(a, b):
+    print(f"Výsledek je {a - b} !")
+
+def deleno(a, b):
+    print(f"Výsledek je {a / b} !")
+
+if znamenko == "+":
+    plus(cislo1, cislo2)
+elif znamenko == "-":
+    minus(cislo1,cislo2)
+elif znamenko == "*":
+    krat(cislo1, cislo2)
+elif znamenko == "/":
+    deleno(cislo1,cislo2)
+else:
+    print("Špatné znamínko ! ")
+
+# Bez tohohle by se program hned ukončil
+input("Stiskni ENTER pro zavření programu")
+
+</pre>
+</code>
+        <div class="oddelovac-2"></div>
+        </div>
+        <div class="krok">
+            <h2 class="title">Basic generátor hesel</h2>
+<pre class="pre">
+<code class="language-python">
+import random
+
+znaky = "abcdefghijklmnopqrstuvwxyz0123456789"
+# Do znaky napiš co může být v hesle
+vysledek = ""
+delka = 8
+
+for i in range(delka):
+    vysledek += znaky[random.randint(0,len(znaky)-1)]
+
+print("Tvoje heslo je: ",vysledek)
+
+# Bez tohohle by se program hned ukončil
+input("Stiskni ENTER pro zavření programu")
+
+</pre>
+</code>
+    </div>
+    </main>
+    <div class="oddelovac-2"></div>
+    
+    <script>hljs.highlightAll();</script>
+</body>
+</html>

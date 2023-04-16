@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&family=Work+Sans&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    background: #dfdfdf;
+    font-family: "Work Sans";
+    font-weight: 400;
+    font-size: 29px;
+}
+header {
+    text-align: center;
+    color: rgb(7, 7, 7);
+    margin-top: 32px;
+    font-size: 45px;
+    font-weight: 600;
+}
+.todo-template {
+    cursor: pointer;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.add-todo-container {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.add-todo {
+    padding: 7px 0;
+    cursor: pointer;
+    user-select: none;
+    width: 75%;
+    margin: auto;
+    text-align: center;
+    background: #eaeaea;
+    margin-top: 120px;
+    border: #dedede 3px solid;
+    border-radius: 8px;
+}
+.todo-text {
+    font-size: 29px;
+    padding: 7px 0;
+    width: 75%;
+    margin: auto;
+    text-align: center;
+    background: #eaeaea;
+    margin-top: 12px;
+    border: #dedede 3px solid;
+    border-radius: 8px;
+}
+.todo-box {
+    padding: 7px 0;
+    width: 75%;
+    margin: auto;
+    text-align: center;
+    background: #eaeaea;
+    margin-top: 12px;
+    border: #dedede 3px solid;
+    border-radius: 8px;
+    transition: 700ms;
+}
+
+.todo-box:hover {
+    background: #ff6161;
+}

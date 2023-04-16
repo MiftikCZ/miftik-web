@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Web který slouží jako počítadlo.">
+    <title>Počítadlo |</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+</head>
+<body>
+    <header id="hd">
+        
+    </header>
+    <main>
+        <div class="count-box">
+            <span id="count">0</span>
+        </div>
+        <div class="rozdelovac"></div>
+        <div class="add-pocitadlo-box">
+            <button class="add-pocitadlo-button" onclick="addOne()">+1</button>
+            <button class="add-pocitadlo-button" onclick="removeOne()">-1</button>
+            <div class="pocitadlo-btn-domu">
+                <a href="../" class="btn1">Zpět</a>
+                <button class="btn2 red" onclick="deleteCounter()">
+                    <span class="material-symbols-outlined">
+                        delete
+                        </span>
+                </button>
+            </div>
+            
+        </div>
+    </main>
+</body>
+</html>

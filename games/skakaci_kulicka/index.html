@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="script.js"></script>
+    <script src="mcanvFAST.js"></script>
+    <script src="ui.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .nakoupeni {
+            cursor: default;
+            width: 95%;
+            padding-bottom: 8px;
+            border-bottom: 3px rgba(255, 255, 255, 0.2) solid;
+            font-size: 25px;
+        }
+
+        .ziskej-v-shopu {
+            font-size: 25px;
+            background: #00000030;
+            border: none;
+            border-bottom: 3px rgba(0, 0, 0, 0.2) solid;
+            border-radius: 7px;
+            padding: 3px 14px;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .border-red {
+            border-bottom: 3px rgba(255, 0, 0, 0.2) solid;
+        }
+
+        .border-red button {
+            background: #ff000030;
+            border-bottom: 3px rgba(255, 0, 0, 0.2) solid;
+            color: rgb(200, 200, 200);
+            cursor: not-allowed;
+        }
+
+        .border-red span {
+            color: #000000a3;
+        }
+
+        .border-purp {
+            border-bottom: 3px rgba(255, 0, 0, 0.2) solid;
+        }
+    </style>
+    <title>Hopsací kulička</title>
+</head>
+
+<body style="background: #020202;">
+    <div id="maindiv"></div>
+    <div style="display: none; " id="shop">
+        <center>
+            <div style="
+            padding: 18px 0;
+            margin: 20px 0;
+            width: 85%; 
+            background:#8b8b8b;
+            font-family: sans-serif;
+            border-radius:8px;
+            overflow-y: auto;">
+                <div style="
+            position: block;
+            width:100%;
+            text-align: start;
+            ">
+
+
+                    <span id="back-button" style="
+                    cursor: pointer;
+                    border: none;
+            border-bottom: 3px rgba(0, 0, 0, 0.2) solid;
+                    margin: 15px;
+                    color: #ffffff;
+                    background: #00000030;
+                    border-radius: 7px;
+                    padding: 4px 14px;
+                    font-size:28px">
+                        <span class="material-symbols-outlined">
+                            chevron_left
+                        </span> zpátky
+                    </span>
+                    <span id="money" style="
+                                        margin: 15px;
+                                        color: #ffffff;
+                                        background: #00000030;
+                                        border-radius: 7px;
+                                        padding: 4px 14px;
+                                        font-size:28px">1850</span>
+
+                </div>
+
+                <span style="font-size: 52px;letter-spacing: 8px;">SHOP</span>
+
+                <p></p>
+
+                <div class="nakoupeni border-red" id="k1">
+                    <span>grip hook +1</span>
+                    <button class="ziskej-v-shopu">5$</button>
+                </div>
+                <p></p>
+                <div class="nakoupeni border-red" id="k2" onclick="BUYk2()">
+                    <span>movespeed +1</span>
+                    <button class="ziskej-v-shopu ">10$</button>
+                </div>
+                <p></p>
+                <div class="nakoupeni border-red" id="k3">
+                    <span> RANDOM SUPERSCHONOST</span>
+                    <button class="ziskej-v-shopu ">99$</button>
+                </div>
+
+            </div>
+
+        </center>
+    </div>
+</body>
+
+</html>

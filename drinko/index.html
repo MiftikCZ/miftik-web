@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drinko 2</title>
+    <link rel="stylesheet" href="tailwind.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="firit.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<body class="color1_0">
+    <div class="panel max-w-full color1_1 text-white">
+        <span class="panel-title">Drinko <span class="title2">2</span></span>
+    </div>
+    <br>
+    <div class="text-center max-w-full title" style="
+    ">
+     
+    </div>
+    <br>
+    <div style="
+    width: 100%;
+    text-align: center;
+    ">
+        <div class="color1_1 content-center text-center cont" style="
+        width: 85%;
+        color: #bababa;
+        max-width: 550px;
+        display: inline-flex;
+        justify-content: center;
+        border-radius: 8px;
+        padding: 22px 0;
+        
+        ">
+            <span class="zbyva" id="voda-ted__">Zbývá ti ješte <span id="voda-ted_" class="zbyva_">8</span> sklenic vody!
+       </div>
+    </div>
+    <br>
+    <div style="
+    width: 100%;
+        text-align: center;
+    ">
+        <div class="color1_1 cont content-center text-center" style="
+        width: 85%;
+        color: #bababa;
+        max-width: 550px;
+        display: inline-block;
+        border-radius: 8px;
+        font-size: 42px;
+        padding: 22px 0;
+        ">
+            <span id="voda-ted" class="vyzn">?</span>
+            <span style="color: #7c7c7c" class="lomitko">/</span>
+            <span id="voda-goal" style="color: #7c7c7c" class="popis">2L</span>
+            <div class="zbyva-container">
+            </div>
+            <span class="rozdelovac2"></span>
+            <span id="voda-ted2" class="vyzn">1,4</span>
+            <span style="color: #7c7c7c" class="lomitko">/</span>
+            <span id="voda-goal2" style="color: #7c7c7c" class="popis">2cup</span>
+            <span class="rozdelovac2"></span>
+            <span id="voda-ted3" class="vyzn">0</span>
+            <span style="color: #7c7c7c" class="lomitko">%</span>
+            <span style="color: #7c7c7c" class="popis"> vypito</span>
+        </div>
+    </div>
+    <br>
+    <div class="container text-center max-w-full title" style="
+    ">
+        přidat a odebrat
+    </div>
+    <br>
+    <div style="
+    width: 100%;
+    text-align: center;
+    ">
+        <div class="color1_1 cont" style="
+        
+        width: 85%;
+        border-radius: 8px;
+        display:inline-block;
+        max-width: 550px;
+        ">
+            <p style="height: 36px;"></p>
+            <button class="color1_2 add-sklenicka" onclick="addWater(300, 1)">
+                1 sklenička
+            </button>
+            <button class="color1_2  add-sklenicka" onclick="addWater(150, 1)">
+                1/2 skleničky
+            </button>
+            <button class="color1_2 add-sklenicka" onclick="addWater(100, 1)">
+                100 ml
+            </button>
+            <span class="rozdelovac2"></span>
+            <button class="color1_3 add-sklenicka" onclick="addWater(150, -1)">
+                1/2 skleničky
+            </button>
+            <button class="color1_3 add-sklenicka" onclick="addWater(100, -1)">
+                100 ml
+            </button>
+            <p style="height: 36px;"></p>
+        </div>
+    </div>
+
+    <br>
+    <div class="container text-center max-w-full title" style="
+    ">
+        denní cíl
+    </div>
+
+    <br>
+    <div style="
+    width: 100%;
+    text-align: center;
+    ">
+        <div class="color1_1 cont" style="
+        width: 85%;
+        border-radius: 8px;
+        display:inline-block;
+        max-width: 550px;
+        ">
+            <p style="height: 36px;"></p>
+            <form class=" pt-6 pb-8 mb-4">
+
+
+                <div class="block items-center justify-center container-goal">
+                    <input style="
+                    font-size: 23px;
+                    width: 200px;
+                    " id="voda-goal-input" type="number" class="goal-input" placeholder="Goal (L)"
+                        title="Kolik vody chceš každý den vypít?">
+                    <p style="height: 12px;"></p>
+                    <button onclick="setGoal()" style="
+                    font-size: 23px;
+                    width: 200px;
+                    " class="goal-tlacitko color1_2" type="button">
+                        Nastavit
+                    </button>
+                </div>
+            </form>
+            <p style="height: 10px;"></p>
+        </div>
+    </div>
+
+    <br>
+    <div class="container text-center max-w-full title" style="
+    ">
+        objem skleničky
+    </div>
+
+    <br>
+    <div style="
+    width: 100%;
+    text-align: center;
+    ">
+        <div class="color1_1 cont" style="
+        width: 85%;
+        border-radius: 8px;
+        display:inline-block;
+        max-width: 550px;
+        ">
+            <p style="height: 36px;"></p>
+            <form class=" pt-6 pb-8 mb-4">
+
+
+                <div class="block items-center justify-center container-goal">
+                    <input style="
+                    font-size: 23px;
+                    width: 200px;
+                    " id="sklenicka-input" type="number" class="goal-input" placeholder="Objem (ml)"
+                        title="Kolik vody chceš každý den vypít?">
+                    <p style="height: 12px;"></p>
+                    <button onclick="setObjem()" style="
+                    font-size: 23px;
+                    width: 200px;
+                    " class="goal-tlacitko color1_2" type="button">
+                        Nastavit
+                    </button>
+                </div>
+            </form>
+            <p style="height: 10px;"></p>
+        </div>
+    </div>
+</body>
+
+</html>

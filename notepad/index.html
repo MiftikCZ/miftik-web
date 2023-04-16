@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miftik Notes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script>
+        window.onload = (()=>{
+            document.documentElement.style.setProperty("--clr",
+            "hsl("+Math.round(Math.random()*360)+", 29%, 15%)"
+            )
+            document.getElementById("project_content").oninput = () => {
+               let b = document.getElementById("project_content").value
+                localStorage.setItem("project_content",b)
+        }
+            let project_content = localStorage.getItem("project_content")
+            document.getElementById("project_content").value = project_content || ""
+            if(!project_content) localStorage.setItem("project_content","")
+        });
+        
+    </script>
+    <header class="header">
+        <span class="title">Miftik Notes</span>
+        <!--  <input type="text" name="get_proj_name" id="get_proj_name" placeholder="Název projektu" class="get_proj_name">
+     --></header>
+    <main class="main">
+        <textarea spellcheck="false" name="project_content" id="project_content" class="project_content" placeholder="input your text here"></textarea>
+    </main>
+
+</body></html>

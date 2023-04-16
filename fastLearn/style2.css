@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,400&family=Roboto:ital,wght@0,300;0,400;0,500;1,400;1,500&display=swap');
+
+* {
+    font-family: "Poppins";
+}
+:root {
+    --bg: #010104fe;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: #fefeff;
+}
+
+main {
+    text-align: center;
+    width: 100%;
+}
+
+.title {
+    width: 75%;
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 80px;
+    font-weight: 600;
+    font-size: 24px;
+}
+.title2 {
+    display: inline-block;
+    margin-top: 80px;
+    margin-bottom: 40px;
+    font-weight: 600;
+    font-size: 18px;
+    color: #acacac;
+}
+
+.smazat {
+    text-align: start;
+    height: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.material-symbols-outlined {
+    color: #9c9c9c;
+    display: block;
+    height: 100%;
+    user-select: none;
+    transition: 400ms;
+    padding: 8px;
+}
+
+
+.rozdelovac{
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    height: 4px;
+    margin: 0;
+    padding: 0;
+    background: #fff2;
+}
+
+.odpoved {
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 40px ;
+    margin: 0;
+}
+.pododpoved {
+    
+    padding-top: 8px;
+    background: rgb(255, 255, 255,3%);
+}
+.tlc {
+    display: inline-block;
+    text-align: center;
+    font-size: 24px;
+    width: 95%;
+    max-width: 460px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 8px;
+    border-bottom: #0003 4px solid;
+    transition: 400ms;
+    letter-spacing: 1px;
+    padding: 8px;
+    color: #cecece;
+    position: sticky;
+    background: hsl(211, 33%, 20%);
+}
+.tlc span {
+    text-align: center;
+    height: 100%;
+}
+
+
+.tlc:hover {
+
+    letter-spacing: 6px;
+    padding-left: 13px;
+    cursor: pointer;
+    background: darkslategray;
+}
+
+
+.e1 {
+    background: hsl(223, 18%, 20%);
+}
+
+.e2 {
+    background: hsl(290, 12%, 20%);
+}
+
+
+.e3 {
+    background: hsl(223, 18%, 20%);
+}

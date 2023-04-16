@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,400&family=Roboto:ital,wght@0,300;0,400;0,500;1,400;1,500&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    text-align: center;
+    background: #0c0c11;
+    color: #040404;
+}
+
+header {
+    top: 0;
+    position: fixed;
+    text-align: start;
+    background: #0004;
+    color: #fefeff;
+    width: 100%;
+    font-size: 32px;
+    padding: 12px;
+}
+
+.title {
+    font-family: "Poppins";
+    font-style: italic;
+    font-weight: 600;
+letter-spacing: 3px;
+}
+
+main {
+    margin-top: 44px;
+    width: 100%;
+}
+
+.tlacitka-container {
+    margin-top: 80px;
+    width: 75%;
+    display: inline-block;
+    background: #0004;
+    border-radius: 40px;
+}
+
+.tlacitko {
+    margin: 16px;
+    margin-bottom: 0px;
+    font-size: 28px;
+    padding-top: 12px;
+    padding-bottom: 10px;
+    padding-left: 24px;
+    padding-right: 24px;
+    background: hsl(180, 20%, 15%);
+    border: none;
+    border-bottom: #0004 6px solid;
+    color: #c6c6c6;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: 800ms;
+}
+
+.tlacitko:hover {
+    letter-spacing: 8px;
+    transform: rotate(2deg);
+}
+
+
+.color2 {
+    background: #204020;
+}
+
+
+.verze {
+    color: #777777;
+    font-size: 18px;
+}
+
+.greentxt {
+    color: #4db74d;
+}

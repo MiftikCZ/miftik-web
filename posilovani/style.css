@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,400&family=Roboto:ital,wght@0,300;0,400;0,500;1,400;1,500&display=swap');
+*  {
+    font-family: "Poppins";
+}
+:root {
+    --nat-h: 5;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poopins";
+    overflow-x: hidden;
+    text-align: center;
+    background: #0c0c11;
+    color: #fefeff;
+}
+
+.nat-color {
+    color: hsl(var(--nat-h),37%,48%);
+}
+
+header {
+    top: 0;
+    position: absolute;
+    text-align: start;
+    background: #0004;
+    color: #fefeff;
+    width: 100%;
+    font-size: 32px;
+    padding: 12px;
+}
+
+.title {
+    font-family: "Poppins";
+    font-style: italic;
+    font-weight: 600;
+letter-spacing: 3px;
+}
+
+main {
+    display: inline-block;
+    text-align: start;
+    margin-top: 110px;
+    width: 95%;
+}
+
+.toptitle {
+    margin-left: 60px;
+    font-size: 28px;
+    color: #fefeff;
+}
+
+.tlacitko {
+    margin-bottom: 4px;
+    font-size: 18px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #fefeff;
+    background: #fff1;
+    padding: 5px;
+    letter-spacing: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: none;
+    border-radius: 10px;
+    transition: 400ms;
+}
+.tlacitko:hover {
+    color: #fff;
+    background: hsl(var(--nat-h), 37%, 28%);
+}
+
+.odpoved {
+
+    margin-left: 10px;
+    padding: 20px;
+    display: inline-block;
+    background: #0003;
+    border-radius: 40px;
+    width: 80%;
+}
+
+
+.odptext {
+    color: #cfcfcf;
+    margin-left: 20px;
+}
+
+
+
+b {
+    color: #fefeff;
+    text-shadow: 2px 2px 2px #000;
+}
+.rozdelovac-cont {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+}
+.rozdelovac {
+    display: inline-block;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    background: #ffffff05;
+    border-radius: 4px;
+    height: 4px;
+    width: 90%;
+}
+
+.link {
+    color: hsl(var(--nat-h), 37%, 48%);
+}
+
+.tecka {
+    font-weight: 500;
+    color: hsl(var(--nat-h), 37%, 48%);
+}
+
+
+.odpbutton {
+    background: #fff5;
+    border: none;
+    height: 100%;
+    display: inline-block;
+    position: relative;
+}
+
+.smalltxt {
+    font-size: 16px;
+    color: #acacac;
+}
+
+.sm {
+    font-size: 15px;
+    color: #fff5;
+}

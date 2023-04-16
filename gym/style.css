@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@1,700&display=swap');
+
+body {
+    background: #080809;
+    font-family: Arial;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  overflow-x: hidden;
+    text-align: center;
+}
+
+.czsk-title {
+    color: rgb(253, 248, 223);
+    display: block;
+    margin-top: 28px;
+    font-size: 85px;
+    text-align: center;
+    letter-spacing: 13px; 
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.gymrat-title {
+    
+    display: block;
+    margin-top: -25px;
+    text-align: center;
+    font-size: 50px;
+    /*color: rgb(221, 207, 189);*/
+    color: rgb(132, 202, 202);
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 700;
+    
+}
+
+.title2 {
+  display: block;
+  margin-top: 90px;
+  text-align: center;
+  font-size: 50px;
+  /*color: rgb(221, 207, 189);*/
+  color: rgb(223, 45, 45);
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 800;
+  transform: skew(8deg);
+  -webkit-transform: skew(8deg);
+  
+}
+
+.text1 {
+  display: block;
+  text-align: center;
+  margin-top: 25px;
+  font-size: 32px;
+  /*color: rgb(221, 207, 189);*/
+  color: rgb(213, 243, 255);
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 800;
+  transform: skew(8deg);
+  -webkit-transform: skew(8deg);
+ 
+}
+.p2 {
+  margin: 0;
+}
+.text2 {
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  /*color: rgb(221, 207, 189);*/
+  color: rgb(190, 207, 214);
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 800;
+  transform: skew(8deg);
+  -webkit-transform: skew(8deg);
+ 
+}
+.vyraz {
+
+  background: rgba(241, 70, 70, 0.061);
+}
+.sect2 {
+  background: rgba(0, 0, 0, 0.171);
+}
+
+.pridatse {
+  cursor: pointer;
+    font-size: 36px;
+    background: #2f47d3;
+    border: none;
+    color: white;
+    letter-spacing: 4px; 
+    padding: 4px 60px;
+    border-radius: 4px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    transition: 0.8s;
+}
+
+.pridatse:hover {
+    background: #3452f8;
+
+    padding: 4px 70px;
+}
+
+/* bublinky */
+
+  .bubbles{
+    position:absolute;
+    width:100%;
+    height: 100%;
+    z-index:-80;
+    overflow:hidden;
+    top:0;
+    left:0;
+  }
+  .bubble{
+    position: absolute;
+    bottom:-100px;
+    width:40px;
+    height: 40px;
+    background:#242424;
+    border-radius:50%;
+    opacity:0.25;
+    animation: rise 10s infinite ease-in;
+  }
+  .bubble:nth-child(1){
+    width:40px;
+    height:40px;
+    left:10%;
+    animation-duration:8s;
+  }
+  .bubble:nth-child(2){
+    width:20px;
+    height:20px;
+    left:20%;
+    animation-duration:5s;
+    animation-delay:1s;
+  }
+  .bubble:nth-child(3){
+    width:50px;
+    height:50px;
+    left:35%;
+    animation-duration:7s;
+    animation-delay:2s;
+  }
+  .bubble:nth-child(4){
+    width:80px;
+    height:80px;
+    left:50%;
+    animation-duration:11s;
+    animation-delay:0s;
+  }
+  .bubble:nth-child(5){
+    width:35px;
+    height:35px;
+    left:55%;
+    animation-duration:6s;
+    animation-delay:1s;
+  }
+  .bubble:nth-child(6){
+    width:45px;
+    height:45px;
+    left:65%;
+    animation-duration:8s;
+    animation-delay:3s;
+  }
+  .bubble:nth-child(7){
+    width:90px;
+    height:90px;
+    left:70%;
+    animation-duration:12s;
+    animation-delay:2s;
+  }
+  .bubble:nth-child(8){
+    width:25px;
+    height:25px;
+    left:80%;
+    animation-duration:6s;
+    animation-delay:2s;
+  }
+  .bubble:nth-child(9){
+    width:15px;
+    height:15px;
+    left:70%;
+    animation-duration:5s;
+    animation-delay:1s;
+  }
+  .bubble:nth-child(10){
+    width:90px;
+    height:90px;
+    left:25%;
+    animation-duration:10s;
+    animation-delay:4s;
+  }
+  @keyframes rise{
+    0%{
+      bottom:-100px;
+      transform:translateX(0);
+    }
+    50%{
+      transform:translate(100px);
+    }
+    100%{
+      bottom:1080px;
+      transform:translateX(-200px);
+    }
+  }

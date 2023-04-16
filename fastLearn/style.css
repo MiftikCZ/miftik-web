@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,400&family=Roboto:ital,wght@0,300;0,400;0,500;1,400;1,500&display=swap');
+
+* {
+    font-family: "Poppins";
+}
+
+body {
+    background: #010104fe;
+    color: #fefeff;
+}
+
+main {
+    text-align: center;
+    width: 100%;
+}
+
+.title {
+    display: inline-block;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 32px;
+    letter-spacing: 4px;
+}
+
+.title2 {
+    display: block;
+    color: #c8c8c8;
+    font-size: 14px;
+    letter-spacing: 0px;
+}
+
+
+.otazky {
+    margin-bottom: 160px;
+    margin-top: 20px;
+    display: inline-block;
+    text-align: center;
+    width: 75%;
+    padding: 12px;
+    border-radius: 40px;
+    background: #ffffff20;
+}
+.otazka {
+    text-align: start;
+    display: inline-flex;
+    width: 90%;
+    margin-bottom: 15px;
+}
+
+.nicTuNeniOtazka {
+    display: inline-block;
+    margin-top: 35px;
+    margin-bottom: 65px;
+}
+.otazka .nicTuNeni {
+    width: 100%;
+    font-size: 18px;
+    text-align: center;
+    color: #ffffff;
+    display: inline-block;
+}
+.otazka input {
+    margin: 0;
+    padding: 0;
+    width: 90%;
+    font-size: 18px;
+    text-align: center;
+    color: #fefeff;
+    background: transparent;
+    border: none;
+    border-bottom: #2d2d2d 2px solid;
+    display: inline-block;
+}
+.material-symbols-outlined {
+    margin-left: 15px;
+    user-select: none;
+    transition: 400ms;
+    border-radius: 15px;
+    font-size: 24px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+.material-symbols-outlined:hover {
+    background: hsla(0,37%,48%);
+}
+
+.add:hover {
+    background: rgb(88, 168, 77);
+}
+.smazat {
+    text-align: end;
+    height: 30px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rozdelovac {
+    text-align: center;
+    display: inline-block;
+    width: 50%;
+    height: 4px;
+    border-radius: 4px;
+    background: transparent;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.next {
+    background: #fefeff;
+    border: none;
+    border-radius: 15px;
+    letter-spacing: 2px;
+    padding: 8px;
+    width: 85%;
+    max-width: 400px;
+    font-size: 20px;
+    transition: 400ms;
+}
+
+.next:hover {
+    color: #020202;
+    background: rgb(77, 168, 97);
+}
+
+.down-uplne {
+    width: 100%;
+    left: 0;
+    display: block;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+}
+
+
+.up-uplne {
+    opacity: 100%;
+    background: rgba(185, 179, 96, 0.959);
+    border-bottom: #0005 5px solid;
+    color: #020202;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    border-radius: 8px;
+    font-size: 24px;
+    width: 100%;
+    left: 0;
+    display: none;
+    text-align: center;
+    transition: 800ms;
+}
+
+.otazkyui {
+    padding-bottom: 30px;
+    padding-top: 30px;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    border-radius: 0px;
+    background: #ffffff05;
+}

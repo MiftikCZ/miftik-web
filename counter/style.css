@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&family=Rubik&family=Work+Sans&display=swap');
+:root {
+    --hue: 200;
+    --bg: #4a4263;
+    --bg2: hsl( calc(var(--hue) + 25) , 45%, 25%);
+    font-size: 32px;
+}
+
+* { 
+    box-sizing: border-box;
+    word-wrap: break-word;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #222228;
+    color: #EEE;
+    font-family: "Work Sans", sans-serif;
+}
+
+header {
+    padding: 18px 18px;
+    font-size: 1.5rem;
+}
+
+main {
+    width: 100%;
+}
+.pocitadla {
+    gap: 3px;
+    padding: 0 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+}
+.pocitadlo {
+    user-select: none;
+    cursor: pointer;
+    color: #D0BCFF;
+    font-size: 1rem;
+    padding: 7px 0;
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    background: var(--bg);
+    border: var(--bg) 3px solid;
+    transition: 400ms;
+    border-radius: 8px;
+}
+
+.pocitadlo:hover {
+    background: var(--bg2);
+    border: #0001 3px solid;
+}
+
+.add-pocitadlo-box {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    bottom: 0;
+    width: 100%;
+}
+.add-pocitadlo-text {
+    color: #EEE;
+    width: 100%;
+    font-size: 1rem;
+    padding: 8px 12px;
+    text-align: center;
+    border: none;
+    background: transparent;
+    border-radius: 0px;
+}
+.add-pocitadlo-button {
+    font-size: 1rem;
+    padding: 8px 12px;
+    cursor: pointer;
+    user-select: none;
+    text-align: center;
+    color: #D0BCFF;
+    background: var(--bg);
+    border: var(--bg) 3px solid;
+    border-radius: 8px;
+}

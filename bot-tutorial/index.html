@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script data-ad-client="ca-pub-1291906990533292" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+     
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta name="description" content="Oficiální web MiftikaCZ">
+    <meta name="keywords" content="jak udelat disocrd bota,jak udelat bota,navod na discord bota,discord.js navod,jak udelat bota s nodejs,jak udelat bota v js">
+    <meta name="theme-color" content="#594fee">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Jak udělat discord bota v javascriptu?</title>
+
+    <style>
+.t-c {
+    color: rgb(39, 139, 253);
+}
+.s-c {
+    color: rgb(92, 173, 129);
+}
+.f-c {
+    color: rgb(90, 80, 238);
+}
+.mf-c {
+    color: rgb(238, 183, 80);
+}
+.r-c {
+    color: rgb(194, 78, 248);
+}
+    </style>
+</head>
+<body>
+    <div class="oddelovac-2"></div>
+    <h1 class="title">Jak udělat discord bota v javascriptu ?</h1>
+    <main>
+        <div class="oddelovac-2"></div>
+        <div class="krok">
+            <h2 class="title">Krok 1.</h2>
+            <p></p>
+            <span class="popisek">Udělej si účet se na <a href="https://replit.com">replit.com</a>.</span>
+        </div>
+        <div class="oddelovac-2"></div>
+        <div class="krok">
+            <h2 class="title">Krok 2.</h2>
+            <p></p>
+            <span class="popisek">Najdi tlačítko <span class="dulezity">New repl</span> a na to klikni.</span>
+            <p></p>
+            <span class="popisek">Vyber <span class="dulezity">Discord.js starter</span>.</span>
+        </div>
+        <div class="oddelovac-2"></div>
+        <div class="krok">
+            <h2 class="title">Krok 3.</h2>
+            <p></p>
+            <span class="popisek">Smaž všechny soubory kromě <span class="dulezity">index.js</span>.</span>
+            <p></p>
+            <span class="popisek">V souboru <span class="dulezity">index.js</span> všechny kódy smaž.</span>
+        </div>  
+        <div class="oddelovac-2"></div>
+        <div class="krok">
+            <h2 class="title">Krok 4.</h2>
+            <p></p>
+            <h1 class="popisek">Napiš tam tenhle kód</h1>
+            <p></p>
+            <div class="kody">
+<pre class="pre">
+<span class="t-c">const</span> Discord = <span class="f-c">require(</span><span class="s-c">"discord.js"</span><span class="f-c">);</span>
+<span class="t-c">const</span> client = <span class="t-c">new</span> Discord.Client<span class="f-c">();</span>
+
+<span class="f-c">client</span>.on<span class="f-c">(</span><span class="s-c">"ready"</span>, <span class="t-c">()</span> <span class="t-c">=></span> <span class="t-c">{</span>
+    console.log<span class="f-c">(</span><span class="s-c">`Link na bota: https://discord.com/oauth2/authorize?client_id=</span>${client.user.id}<span class="s-c">&permissions=8&scope=bot`</span><span class="f-c">);</span>
+<span class="t-c">}<span class="f-c">)</span></span>
+
+<span class="f-c">client</span>.on<span class="f-c">(</span><span class="s-c">"message"</span>, message <span class="t-c">=></span> <span class="t-c">{</span>
+
+    <span class="s-c">// Příkaz 1</span> 
+    <span class="s-c">/* Místo "ahoj" napište příkaz, například pokud tam 
+        napíšete "!test", a pak napíšete na váš discord server "!test" tak to odešle 
+        tu zprávu kterou jste napsali v tom .send()*/</span>
+    
+    <span class="f-c">if</span><span class="f-c">(</span>message.content <span class="t-c">===</span> <span class="s-c">"ahoj"</span><span class="f-c">)</span> <span class="t-c">{</span>
+        <span class="f-c">return</span> message.channel.send<span class="f-c">(</span><span class="s-c">"Ahoooj"</span><span class="t-c"> + </span>message.author.tag<span class="f-c">);</span>
+    <span class="t-c">}</span>
+
+    <span class="s-c">// Příkaz 2</span>
+    <span class="f-c">if</span><span class="f-c">(</span>message.content <span class="t-c">===</span> <span class="s-c">"!server"</span><span class="f-c">)</span> <span class="t-c">{</span>
+        <span class="f-c">return</span> message.channel.send<span class="f-c">(</span><span class="s-c">"Discord server: https://miftik.tk/discord"</span><span class="f-c">);</span>
+    <span class="t-c">}</span>
+
+    <span class="s-c">// Příkaz 3</span>
+    <span class="f-c">if</span><span class="f-c">(</span>message.content <span class="t-c">===</span> <span class="s-c">"!otazka"</span><span class="f-c">)</span> <span class="t-c">{</span>
+        <span class="f-c">return</span> message.channel.send<span class="f-c">(</span><span class="s-c">`Jak se máš </span>${message.author.tag}<span class="s-c"> ?`</span></span><span class="f-c">);</span>
+    <span class="t-c">}</span>
+
+    <span class="s-c">// Embeds návod</span>
+    <span class="s-c">// To \n tam rozdělí řádky</span>
+
+    <span class="f-c">if</span><span class="f-c">(</span>message.content <span class="t-c">===</span> <span class="s-c">"!embed"</span><span class="f-c">)</span> <span class="t-c">{</span>
+        
+        <span class="t-c">let</span> embed = <span class="t-c">new</span> Discord.MessageEmbed<span class="f-c">()</span>
+        <span class="mf-c">.setTitle<span class="f-c">(</span></span> <span class="s-c">"Toto se zobrazí nahoře na zprávě"</span><span class="f-c">)</span>
+        <span class="mf-c">.setDescription<span class="f-c">(</span></span> <span class="s-c">"Řádek 1<span class="r-c">\n</span>Řádek 2"</span><span class="f-c">)</span>
+
+        <span class="f-c">return</span> message.channel.send<span class="f-c">(</span>embed<span class="f-c">);</span>
+    <span class="t-c">}</span>
+
+<span class="t-c">}<span class="f-c">)</span></span>
+
+<span class="f-c">client</span>.login<span class="f-c">(</span>process.env.token<span class="f-c">);</span>
+</pre>
+            </div>
+        </div>
+        <div class="oddelovac-2"></div>
+        <div class="krok">
+            <h2 class="title">Krok 5.</h2>
+            <p></p>
+            <span class="popisek">Půjdeš na <a href="https://discord.com/developers/applications">discord devlopers portal</a>.</span>
+            <p></p>
+            <span class="popisek">V pravo nahoře klikni na <span class="dulezity">New Application</span> a tam si udělej novou aplikaci.</span>
+            <p></p>
+            <span class="popisek">V levo klikni na <span class="dulezity">Bot</span> a tam klikni na <span class="dulezity">Add Bot</span> a pak na <span class="dulezity">Yes, do it!</span></span>
+            <p></p>
+            <span class="popisek">Potom klikni na <span class="dulezity">Copy token</span></span>
+        </div>
+        <div class="oddelovac-2"></div>
+        <div class="krok">
+            <h2 class="title">Krok 6.</h2>
+            <p></p>
+            <span class="popisek">Klikni v levo na ikonu zámku a do key napíšeme <span class="dulezity">token</span>.</span>
+            <p></p>
+            <span class="popisek">Do value napiš token který sis právě kopíroval.</span>
+        </div>
+        <div class="oddelovac-2"></div>
+        <div class="krok">
+            <h2 class="title">Krok 7.</h2>
+            <p></p>
+            <span class="popisek">Když se zase vrátíme.</span>
+            <p></p>
+            <span class="popisek">Do value napiš token který sis právě kopíroval.</span>
+        </div>
+        <div class="oddelovac-2"></div>
+        <div class="krok">
+            <h2 class="title">Krok 8.</h2>
+            <p></p>
+            <span class="popisek">Bota zapni pomocí tlačítka <span class="dulezity">Run</span>.</span>
+            <p></p>
+            <span class="popisek">V consoli se ti zobrazí odkaz na bota který použij k pozvání bota k sobě na server :D</span>
+        </div>
+        <div class="oddelovac-2"></div>
+        <div class="krok">
+            <h2 class="title">Web by MiftikCZ</h2>
+            <p></p>
+            <span class="popisek">Budu rád když se připojíte na můj <span class="dulezity"><a href="/discord">discord server</a></span> :)</span>
+        </div>
+    </main>
+    <div class="oddelovac-2"></div>
+</body>
+</html>

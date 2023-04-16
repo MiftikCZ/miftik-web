@@ -1,0 +1,35 @@
+body {
+    background: #131313;
+    font-family: Arial;
+    font-weight: 400;
+    color: white;
+}
+
+.title {
+    font-size: 38px;
+    margin-top: 35px;
+    display: inline-block;
+}
+
+.title-container {
+    text-align: center;
+}
+
+.main-container {
+    text-align: center;
+    margin-top: 60px;
+    display: block;
+}
+
+.main-container input {
+    padding: 10px 40px;
+    border-radius: 4px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.199);
+    border: none;
+    font-size: 25px;
+}
+
+.main-container input:hover, .main-container input:focus {
+    background: rgba(0, 0, 0, 0.397);
+}

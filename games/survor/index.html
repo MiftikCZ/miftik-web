@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        window.onload = () => {
+            
+        document.getElementById("menudiv").style.display = "none"
+        }
+    </script>
+    <script src="script.js"></script>
+    <script src="ovladani.js"></script>
+    <script src="mcanv.js"></script>
+    <link rel="stylesheet" href="menu.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+    </style>
+    <script>
+        function btnClicked(id) {
+            let img
+            if (id == "11") {
+                document.getElementById("b12").classList.remove("selected")
+                document.getElementById("b11").classList.add("selected")
+                img = new Image()
+                img.src = "./assets/kara1.png"
+                assets.pA = img
+            }
+            if (id == "12") {
+                document.getElementById("b11").classList.remove("selected")
+                document.getElementById("b12").classList.add("selected")
+                img = new Image()
+                img.src = "./assets/kara2.png"
+                assets.pA = img
+            }
+
+
+            if (id == "21") {
+                document.getElementById("b21").classList.add("selected")
+                document.getElementById("b22").classList.remove("selected")
+                document.getElementById("b23").classList.remove("selected")
+
+                img = new Image()
+                img.src = "./assets/mapa1.png"
+                mapa.scale=12
+                assets.mapa = img
+            }
+            if (id == "22") {
+                document.getElementById("b23").classList.remove("selected")
+                document.getElementById("b22").classList.add("selected")
+                document.getElementById("b21").classList.remove("selected")
+                img = new Image()
+                img.src = "./assets/mapa2.png"
+                mapa.scale=27
+                assets.mapa = img
+            }
+            if (id == "23") {
+                document.getElementById("b23").classList.add("selected")
+                document.getElementById("b22").classList.remove("selected")
+                document.getElementById("b21").classList.remove("selected")
+                img = new Image()
+                img.src = "./assets/mapa3.png"
+                mapa.scale=27
+                assets.mapa = img
+            }
+        }
+    </script>
+    <title>Survor | 1.0.0</title>
+</head>
+
+<body>
+    <div id="menudiv">
+        <div class="title-container">
+            <span class="title">Survor</span>
+            <span>hra o autě :D</span>
+        </div>
+
+        <div class="menu-buttons">
+            <button class="button" id="hratButton" onclick="setScene('game')">hrát</button>
+            <button class="button" onclick="setScene('menu')">menu</button>
+            <a href="https://miftik.tk"><button class="button">stránka</button></a>
+        </div>
+    </div>
+
+
+    <div id="menu2div">
+        <span class="title">
+            Inventář
+        </span>
+        <div style="width:100%;margin-top: 12px;">
+            <div class="menu-cont">
+                <span class="podtitle">
+                    AUTO
+                </span>
+                <div class="vicveci">
+                    <button class="btn2 selected" id="b11" onclick="btnClicked('11')">kara1</button>
+                    <button class="btn2" id="b12" onclick="btnClicked('12')">kara2</button>
+                </div>
+                <p style="margin-bottom:20px;"></p>
+                <p></p>
+                <div class="rozdelovac"></div>
+                <span class="podtitle">
+                    MAPA
+                </span>
+                <div class="vicveci">
+                    <button class="btn2" id="b21" onclick="btnClicked('21')">mapa1</button>
+                    <button class="btn2 selected" id="b22" onclick="btnClicked('22')">mapa2</button>
+                    <button class="btn2" id="b23" onclick="btnClicked('23')">mapa3</button>
+                </div>
+                <p style="margin-bottom:20px;"></p>
+                <p></p>
+                <div class="rozdelovac"></div>
+            </div>
+            <button class="button button2adds" onclick="setScene('default')">Zpátky</button>
+        </div>
+    </div>
+</body>
+
+</html>

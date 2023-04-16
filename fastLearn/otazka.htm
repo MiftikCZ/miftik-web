@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Otázka 4/8</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <link rel="stylesheet" href="style2.css">
+    <script>
+        var otazkaTed = 0
+        var otazky2, otazky3
+        window.onload = () => {
+            otazkaTed = parseInt(localStorage.getItem("fastLearn_otazkaTed")) || 0
+            otazky2 = JSON.parse(localStorage.getItem("fastLearn_otazky")||[]) || []
+            otazky3 = localStorage.getItem("fastLearn_otazky2")
+            if(!otazky3) {
+                localStorage.setItem("fastLearn_otazky2",JSON.stringify([]))
+                otazky3=[]
+            }
+            console.log(otazky3)
+            otazky3 = JSON.parse(otazky3)
+            if(otazky2.length<(otazkaTed+1)) {
+                    localStorage.setItem("fastLearn_otazkaTed","0")
+                    return window.location.replace("./konecTestu.html")   
+            }
+            document.getElementById("title").innerText=otazky2[otazkaTed]||otazky2[0] || "?"
+            document.getElementById("title2").innerText="Otázka: "+(otazkaTed+1)+"/"+otazky2.length||"?"
+        }
+
+        function btn(id) {
+            try {
+                otazky3[otazkaTed] = [id,otazky2[otazkaTed]]
+            } catch(error) {
+                otazky3.push([id, otazky2[otazkaTed]])
+            }
+            localStorage.setItem("fastLearn_otazky2",JSON.stringify(otazky3))
+            localStorage.setItem("fastLearn_otazkaTed",(parseInt(otazkaTed)+1).toString())
+            window.location.reload()
+        }
+    </script>
+</head>
+
+<body>
+    <main>
+        <span class="title" id="title">?</span>
+        <br>
+        <div class="odpoved">
+            <span class="title2" id="title2">Otázka: ?/?</span>
+            <br>
+            <div class="pododpoved">
+
+                <button class="tlc e1" onclick="btn('1')">
+                    <div class="smazat"><span class="material-symbols-outlined">
+                            done
+                        </span></div>
+                    <span>ANO</span>
+                </button>
+                <br>
+                <button class="tlc e3" onclick="btn('3')">
+                    <div class="smazat"><span class="material-symbols-outlined">
+                            close
+                    </div> </span><span>NE</span>
+                </button>
+                <br>
+
+
+                <button class="tlc e2" onclick="btn('2')">
+                    <div class="smazat"><span class="material-symbols-outlined add">question_mark</span>
+                    </div> <span>NEJSEM SI JISTÝ</span>
+                </button>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

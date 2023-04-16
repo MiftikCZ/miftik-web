@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+@font-face {
+    font-family: 'Liberation Mono';
+    src: URL('../LiberationMono-Regular.ttf') format('truetype');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: rgb(34, 35, 83);
+    /* background: rgb(27, 28, 65); */
+    color: #fff;
+    text-align: center;
+    font-family: "Roboto";
+}
+
+.t-c {
+    color: rgb(39, 139, 253);
+}
+
+.s-c {
+    color: rgb(92, 173, 129);
+}
+
+.f-c {
+    color: rgb(90, 80, 238);
+}
+
+.mf-c {
+    color: rgb(238, 183, 80);
+}
+
+.r-c {
+    color: rgb(194, 78, 248);
+}
+
+a {
+    color: rgb(133, 190, 255);
+}
+
+.kody {
+    width: 100%;
+    text-align: center;
+}
+code {
+    font-size: 23px;
+    font-family: "Liberation Mono";
+    color: rgb(196, 196, 196);
+    text-align: start;
+    left: 0;
+    padding: 0;
+    margin: 0;
+}
+pre {
+    font-size: 19px;
+    font-family: "Liberation Mono";
+    background: rgba(36, 34, 34, 0.589) !important;
+    color: rgb(196, 196, 196);
+    border: rgb(31, 29, 29) 6px solid;
+    text-align: start;
+    width: 65%;
+    display: inline-block;
+    left: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.dulezity {
+    background: rgba(0, 0, 0, 0.411);
+    border-radius: 3px;
+    padding: 0 7px;
+}
+
+.popisek {
+    font-size: 23px;
+}
+
+.element {
+    margin-bottom: 34px;
+}
+
+.app {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    display: flex;
+    place-content: center;
+}
+
+.title {
+    font-size: 38px;
+    width: 100%;
+    color: rgb(238, 238, 238);
+}
+.title-kroku {
+    font-size: 32px;
+    width: 100%;
+    color: rgb(238, 238, 238);
+}
+
+.odkazy {
+    background: rgb(156, 178, 209);
+    border-radius: 6px;
+    border: rgb(18, 19, 44) 6px solid;
+    width: 60%;
+}
+
+.odkazy ul {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.oddelovac-2 {
+    height: 21px;
+    width: 100%;
+    background: rgba(78, 78, 78, 0.062);
+}
+
+.odkazy ul li button {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    transition: 0.7s;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    background: rgb(156, 178, 209);
+    font-size: 32px;
+}
+
+.odkazy ul li button:hover {
+    background: rgb(236, 234, 255);
+}
+
+.odkazy ul li button a {
+    font-family: "Roboto";
+    color: rgb(0, 0, 0);
+}
+
+a {
+    text-decoration: none;
+}
+
+/*
+hjs
+*/
+
+
+.hljs-comment {
+    color: #888
+}
+
+.hljs-punctuation, .hljs-tag {
+    color: #444a
+}
+
+.hljs-tag .hljs-attr, .hljs-tag .hljs-name {
+    color: rgb(91, 235, 98);
+}
+
+.hljs-attribute, .hljs-doctag, .hljs-keyword, .hljs-meta .hljs-keyword, .hljs-name, .hljs-selector-tag {
+    color: rgb(227, 106, 252);
+    font-weight: 700
+}
+
+.hljs-string {
+    color: rgb(54, 219, 103)
+}
+
+.hljs-number {
+    color: rgb(255, 194, 124)
+}
+
+.hljs-deletion, .hljs-quote, .hljs-selector-class, .hljs-selector-id, .hljs-string, .hljs-template-tag, .hljs-type {
+    color: #67ca99;
+}
+
+.hljs-section, .hljs-title {
+    color: #6b8bf5;
+    font-weight: 700
+}
+
+.hljs-link, .hljs-operator, .hljs-regexp, .hljs-selector-attr, .hljs-selector-pseudo, .hljs-symbol, .hljs-template-variable, .hljs-variable {
+    color: #bc6060
+}
+
+.hljs-literal {
+    color: #78a960
+}
+
+.hljs-addition, .hljs-built_in, .hljs-bullet, .hljs-code {
+    color: #558ee4;
+    font-weight: 600
+}
+
+.hljs-meta {
+    color: #1f7199
+}
+
+.hljs-meta .hljs-string {
+    color: #4d99bf
+}
+
+.hljs-emphasis {
+    font-style: italic
+}
+
+.hljs-strong {
+    font-weight: 700
+}
