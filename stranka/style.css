@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500&family=Quicksand:wght@300;400;500&family=Fira+Sans:wght@400;500&display=swap');
+
+:root {
+    font-size: 25px;
+    --fg: 211, 211, 215;
+    --font-main: "Fira Sans", sans-serif;
+    --font-second: "Space Grotesk", monospace;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: block;
+    background: #202020;
+    height: 100%;
+    min-height: 100vh;
+    color: rgb(var(--fg));
+    background: #141414;
+    background: #202020;
+    background-size: cover;
+    color: #EEF0F2;
+    margin: 0;
+    font-family: var(--font-main);
+    padding-bottom: 3em;
+}
+
+.section {
+    width: 100%;
+    position: relative;
+    display: flex;
+    min-height: 700px;
+    height: 100%;
+}
+
+.section::after {
+    content: "";
+
+    position: absolute;
+    display: block;
+    width: calc(100vw - 2em);
+    height: 4px;
+    background: #eee4;
+    bottom: 0;
+}
+
+.section.first {
+    background: url("https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGNvbXB1dGVyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60") no-repeat center;
+    background-color: #13232cee;
+    background-blend-mode: multiply;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: #13232c; */
+    background: #202020;
+}
+
+.section.first .header {
+    max-height: fit-content;
+    position: relative;
+    font-family: "Quicksand", sans-serif;
+    display: flex;
+    width: fit-content;
+    flex-direction: row;
+    gap: 0.5em;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.section.first .header .text {
+    display: flex;
+    flex-direction: column;
+}
+
+.section.first .header .text .subtitle {
+    color: #eeea;
+    font-weight: 400;
+}
+
+.section.first .header .text .title {
+    color: #63e951;
+    font-family: "Fira Sans", sans-serif;
+    font-size: 1.25em;
+    font-weight: 800;
+}
+
+
+.section.second {
+    width: 100%;
+    position: relative;
+    display: block;
+    /* background: #21373f; */
+    padding: 1em;
+    overflow: hidden;
+}
+
+
+.section.second .header {
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+
+.section.contact .header .more {
+    color: #aaa;
+    font-size: 0.9em;
+}
+
+
+
+
+.section.second .content {
+    margin-top: 0.5rem;
+    width: 100%;
+    color: #ccc;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); 
+    grid-auto-flow: row;
+    gap: 0.5em;
+}
+
+.section.second .content .box {
+    max-width: 800px;
+    width: 100%;
+    background: #252525;
+    border-radius: 0.25em;
+    padding: 0.5em;
+    border: #eee2 1px solid;
+    box-shadow: #0004 0 5px 15px;
+}
+
+.section.second .content .box .title {
+    font-size: 1.2em;
+    padding-bottom: 0.25em;
+    color: #eee;
+    font-weight: bold;
+    font-family: "Quicksand", sans-serif;
+}
+
+.section.second .content .box .popisek {
+    font-size: 0.8em;
+    color: #ccc;
+}
+
+.section.second .content .sel, .section.whyme .content .sel {
+    color: #63e951;
+}
+
+
+.section.whyme {
+    display: block;
+    padding: 1em;
+}
+
+.section.whyme .header {
+    padding: 0.5em 0;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.section.whyme .content .title {
+    color: #ccc;
+    text-decoration: underline;
+}
+
+.section.whyme .content .title .who {
+    /* color: #cec; */
+    font-weight: 500;
+}
+
+.section.whyme .content {
+    padding: 1em 0;
+}
+
+.section.whyme .content ul {
+    padding: 0.2em unset;
+}
+
+
+.section.whyme .content .note {
+    color: #aaa;
+    font-style: italic;
+}
+
+.section.contact {
+    width: 100%;
+    position: relative;
+    display: block;
+    /* background: #21373f; */
+    padding: 1em;
+    overflow: hidden;
+}
+
+
+.section.contact .select {
+    width: 100%;
+    margin-top: 0.5rem;
+    width: 100%;
+    color: #ccc;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
+    grid-auto-flow: row;
+    gap: 0.5em;
+}
+
+form {
+    width: 100%;
+    min-width: none;
+}
+
+
+.section.contact .header {
+    padding: 0.5em 0;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+
+.section.contact .select .box {
+    max-width: 800px;
+    width: 100%;
+    background: #252525;
+    border-radius: 0.25em;
+    padding: 0.25em;
+    border: #eee2 1px solid;
+    box-shadow: #0004 0 5px 15px;
+}
+
+
+.section.contact .select .box .title {
+    width: 100%;
+    display: flex;
+    font-size: 1.1em;
+    justify-content: start;
+    padding-bottom: 0.25em;
+    color: #eee;
+    font-weight: bold;
+}
+
+.section.contact .select .box .popisek {
+    color: #ccc;
+    font-size: 0.75em;
+}
+
+
+
+.section.contact .content .box.focus {
+    border: #4e48 2px solid;
+    background: #333;
+}
+
+.section.contact .content .box.focus .title {
+    color: #4e4;
+}
+
+
+.section.contact .content .box.focus .popisek {
+    color: #eee;
+}
+
+
+
+.section.contact .content .inp {
+    font-family: sans-serif;
+    box-shadow: #0004 0 5px 15px;
+    border: hidden;
+    font-size: 0.8em;
+    padding: 0.25em 0.5em;
+    /* border-radius: 0.1em; */
+    background: #cccccc;
+    background: #ccc1;
+    border-bottom: rgb(85, 181, 85) 0.15em solid;
+    color: #eee;    
+}
+
+.section.contact .content .inp:focus-within {
+    outline: none;
+    border-bottom-color: #4e4;  
+}
+
+.section.contact .content .submit {
+    margin-top: 0.5em;
+    box-shadow: #0004 0 5px 15px;
+    border: hidden;
+    padding: 0.25em 0.5em;
+    border-radius: 0.2em;
+    background: #cccccc;
+    background: #ccc1;
+    background: #4e4;
+    color: #222;    
+    font-size: 0.9em;
+    cursor: pointer;
+}
+
+.section.contact .content .submit {
+    margin-top: 0.5em;
+    box-shadow: #0004 0 5px 15px;
+    border: hidden;
+    padding: 0.25em 0.5em;
+    border-radius: 0.2em;
+    background: #cccccc;
+    background: #ccc1;
+    background: #4e4;
+    color: #222;    
+    font-size: 0.9em;
+    cursor: pointer;
+}
+
+.section.contact .content .submit.cant {
+    font-style: italic;
+    cursor: not-allowed;
+    background: rgba(132, 155, 132, 0.563);
+    color: #333;
+}
+
+.section.contact .content .submit.cant ~ .podtext {
+    font-size: 0.8em;
+    color: #eeea;
+}
