@@ -100,6 +100,19 @@ a {
     background: #0004;
 }
 
+
+
+.imakewebs {
+    /* background: rgb(41, 45, 74); */
+    background: hsl(220,28%,15%);
+    box-shadow: #0004 0 5px 15px;
+}
+
+.imakewebs .sel {
+    color: rgb(83, 131, 252);
+    /* color: hsl(220,60%,50%); */
+}
+
 .bigwidget.contribute {
   display: block;
 }
