@@ -1,17 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
-@font-face {
-    font-family: 'Liberation Mono';
-    src: URL('../LiberationMono-Regular.ttf') format('truetype');
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&family=Roboto:wght@300;400&display=swap');
 
 body {
     margin: 0;
     padding: 0;
-    background: rgb(34, 35, 83);
+    background: hsl(220,28%,15%);
     /* background: rgb(27, 28, 65); */
-    color: #fff;
+    color: #222 !important;
+    background: #cccccc;
     text-align: center;
     font-family: "Roboto";
+}
+
+* {
+    box-sizing: border-box;
+}
+
+code {
+
+    font-family: "Roboto mono";
 }
 
 .t-c {
@@ -43,18 +49,18 @@ a {
     text-align: center;
 }
 code {
+    padding: 50px;
+    max-width: 400px;
     font-size: 23px;
-    font-family: "Liberation Mono";
     color: rgb(196, 196, 196);
     text-align: start;
-    left: 0;
-    padding: 0;
     margin: 0;
+    left: 0;
 }
 pre {
     font-size: 19px;
     font-family: "Liberation Mono";
-    background: rgba(36, 34, 34, 0.589) !important;
+    background: hsl(220,28%,15%);
     color: rgb(196, 196, 196);
     border: rgb(31, 29, 29) 6px solid;
     text-align: start;
@@ -63,6 +69,7 @@ pre {
     left: 0;
     padding: 0;
     margin: 0;
+    margin-bottom: 1em;
 }
 
 .dulezity {
@@ -91,18 +98,28 @@ pre {
 .title {
     font-size: 38px;
     width: 100%;
-    color: rgb(238, 238, 238);
+    color: #222;
+    font-weight: bold;
 }
 .title-kroku {
     font-size: 32px;
     width: 100%;
-    color: rgb(238, 238, 238);
+    color: #252525;
+}
+
+.krok {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2em;
 }
 
 .odkazy {
     background: rgb(156, 178, 209);
     border-radius: 6px;
-    border: rgb(18, 19, 44) 6px solid;
+    padding: 50px;
+    border: #2224 4px solid;
     width: 60%;
 }
 
