@@ -21,7 +21,7 @@ body {
     display: block;
 }
 
-.main-container input {
+.main-container input, .main-container button {
     padding: 10px 40px;
     border-radius: 4px;
     color: #fff;
