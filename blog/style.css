@@ -1,5 +1,5 @@
 
-  @import url('https://fonts.googleapis.com/css2?family=Acme&family=Chivo+Mono:wght@300;400;500&family=Fira+Sans:wght@400;500&family=Kosugi+Maru&family=Pangolin&family=Rubik:ital,wght@0,400;0,500;1,300&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@300;400;500&family=Fira+Sans:wght@400;500&family=Kosugi+Maru&family=Pangolin&family=Rubik:ital,wght@0,400;0,500;1,300&display=swap');
 :root {
     font-size: 20px;
     --bg: #eee; 
@@ -77,6 +77,26 @@ main img.semi-large {
 
 main img {
     border-radius: 0.5em;
+}
+
+main .napsal {
+    background: #2281;
+    padding: 0.25em 0;
+    color: #444;
+    font-size: 0.9em;
+}
+
+main .napsal .text {
+
+    font-family: sans-serif;
+}
+
+.material-symbols-outlined {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    vertical-align: middle;
 }
 
 @media (max-width: 700px) {
