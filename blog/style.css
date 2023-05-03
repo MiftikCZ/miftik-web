@@ -104,6 +104,8 @@ main .napsal .text {
         padding: 0.25rem 0.75em;
         bottom: 0;
         left: 0;
+        width:calc(100% - 1em);
+        height: fit-content;
         font-size: 1.9em;
 
         left: 50%;
