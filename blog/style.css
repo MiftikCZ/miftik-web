@@ -6,6 +6,7 @@
     --hue: 198;
     --primary: hsl(var(--hue),70%,15%);
     --fg: #222;
+    --place-bg: center;
 }
 
 * {
@@ -30,7 +31,7 @@ header {
     position: relative;
     height: 100%;
     padding: 0.5em;
-    background: var(--img-url) no-repeat center var(--bg-color);
+    background: var(--img-url) no-repeat var(--place-bg) var(--bg-color);
     background-size: var(--bg-size);
 }
 
@@ -116,4 +117,11 @@ main .napsal .text {
         justify-content: center;
         align-items: center;
     }
+}
+
+.divider {
+    width: 100%;
+    display: block;
+    height: 2px;
+    background: #4445;
 }
