@@ -29,6 +29,16 @@
     <meta property="twitter:image" content="https://miftik.tk/thumbnail.jpg">
 </head>
 <body>
+    <header class="head">
+        <input type="checkbox" name="" id="mobile-navbar-show" />
+        <label for="mobile-navbar-show" class="mobile-navbar-show">&#9776;</label>
+        <nav>
+            <a href="/" target="_self">Home</a>
+            <a href="https://miftikcz.github.io/portfolio" target="_self" navbar-link>Portfolio</a>
+            <a href="#blog" target="_self" navbar-link>Blog</a>
+            <a href="#contact" target="_self" navbar-link>Contact</a>
+        </nav>
+    </header>
     <div class="first">
         <div class="text">
             MiftikCZ web
@@ -37,7 +47,7 @@
             <a class="link" href="https://discord.gg/SDxqN8qab2"><i class="fa-brands fa-discord"></i> Komunita</a>
             <a class="link" href="https://discord.gg/Paur9PRXRb"><i class="fa-brands fa-discord"></i> Gym</a>
             <a class="link" href="https://github.com/MiftikCZ"><i class="fa-brands fa-github"></i> Github</a>
-            <a class="link" href="https://miftikcz.github.io/portfolio"><i class="fa-solid fa-code"></i> O mě</a>
+            <a class="link" href="#about" target="_self"><i class="fa-solid fa-code"></i> O mě</a>
         </div>
     </div>
     <div class="bigwidget center imakewebs bottomgap">
@@ -111,7 +121,7 @@
         <div class="category">
             <div class="title">Discord</div>
             <div class="projects">
-                <a class="project" href="https://discord.gg/gjbuRhj4AC"><i class="fa-brands fa-discord"></i> Matematiky</a>
+                <a class="project" href="math/"><i class="fa-brands fa-discord"></i> Matematiky</a>
                 <a class="project" href="https://discord.com/api/oauth2/authorize?client_id=871641284941606923&permissions=8&scope=bot">ElimRaid</a>
                 <a class="project" href="https://discord.com/oauth2/authorize?client_id=860826202154467390&permissions=8&scope=bot">Stats+</a>
                 <a class="project" href="https://github.com/MiftikCZ/MiftikRAID">MiftikRAID</a>
@@ -163,7 +173,7 @@
             </div>
         </div>
 
-        <div class="category">
+        <div class="category" id="blog">
             <div class="title">Blog</div>
             <div class="projects">
                 <a class="project" href="./blog/gigachad_tutorial/">Jak se stát gigachadem</a>
@@ -179,6 +189,20 @@
         <p>Pokud máš zájem, koukni <a href="./stranka">sem</a></p>
     </div>
 
+    <div class="bigwidget contact bottomgap" id="contact">
+        Máš zájem o vytvoření stránky nebo mi chceš něco napsat?, <br><br>
+        Můj email: <span class="copy sel">memertv17@proton.me</span><br>
+        Můj instagram: <a class="copy sel" href="//instagram.com/miftikcz_">miftikcz_</a><br><br>
+        A moje jméno je <span class="sel">Kuba Kollár</span> ale přezdívka je MiftikCZ ;D
+    </div>
+
+    <div class="bigwidget about bottomgap" id="about">
+        <p>Jsem programátor a vývojář webových stránek i aplikací. Zajímám se o sport, zvířata, přírodu a kódování.<br>
+        Celkem mi jde <span class="sel">clonování webovek v HTML/CSS</span> podle připraveného designu. 
+        </p>
+        <p>Pro vývoj webovek používám rád Preact.js a <span class="sel">čistý HTML/CSS/JS</span>. Myslím že nejvíce mi jde <span class="sel">JavaScript</span> ale preferuji TypeScript. Zvládnu trochu programovací jazyk rust. Umím také flutter (android app dev) a svelte.</p>
+    </div>
+
     <div class="bigwidget testik center bottomgap">
         <p>Mějte se fanfárově! :D</p>
     </div>
@@ -190,7 +214,15 @@
     <script>
         // open all the links in new tab
         document.querySelectorAll("a").forEach(el => {
-            el.target = "_blank"
+            el.target ||= "_blank"
+        })
+
+        const mobileNavbarShow = document.getElementById("mobile-navbar-show")
+
+        document.querySelectorAll("[navbar-link]").forEach(el => {
+            el.addEventListener("click", ()=>{
+                mobileNavbarShow.checked = false
+            })
         })
     </script>
 </body>
