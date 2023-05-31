@@ -207,6 +207,25 @@ body > .projects .category > .projects .project {
     bottom: 0;
 }
 
+body > .projects .category > .projects .project.novinka {
+    background: #272637;
+}
+
+body > .projects .category > .projects .project.novinka::after {
+    content:"novinka!";
+    z-index: 100;
+    background: #7f7ab8;
+    color: #201f23;
+    padding: 0.1em 0.3em;
+    border-radius: 0.8em;
+    display: inline-block;
+    position: absolute;
+    font-size: 0.7em;
+    rotate: 2deg;
+    right: -1rem;
+    bottom: calc(100% - 1em);
+}
+
 body > .projects .category > .projects .project:hover {
     bottom: 0.25em;
 }
