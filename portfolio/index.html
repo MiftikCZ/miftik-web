@@ -9,34 +9,83 @@
 </head>
 <body>
     <header>
-        <div class="where">Moje projekty [VE VÝVOJI]</div>
+        <div class="where">Moje projekty</div>
         <a class="back" href="..">Domů</a>
     </header>
+    <div hidden class="popup nodisplay" id="p-popup">
+        <div class="content" id="p-content">
+            <button class="close" onclick="closePopup()">&#10006</button>
+            <img src="https://freesvg.org/storage/img/thumb/errname1.png" id="p-image" alt="">
+            <div class="about">
+                <a href="https://example.com" id="p-link" class="link" target="_blank">example.com</a>
+                <span class="popis"><span class="title" id="p-title">...</span> <span id="p-popis">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde sapiente blanditiis consequuntur et cumque excepturi soluta, maxime a. Provident distinctio maxime ea dolores voluptate dicta tempore laborum vel ut vitae.</span></span>
+            </div>
+        </div>
+    </div>
     <div class="list">
-        <div class="item">
-            <img src="https://raw.githubusercontent.com/MiftikCZ/note_keeper/master/demo.png" item-fotka class="image" height="200" alt="note keeper image">
-            <div class="head" item-nadpis>Note Keeper</div>
-            <div class="content" item-popisek>
+        <div class="item" item="miftikcz.github.io/note_keeper">
+            <img src="https://raw.githubusercontent.com/MiftikCZ/note_keeper/master/demo.png" alt="note keeper">
+            <div class="head">Note Keeper</div>
+            <div class="content">
                 Jednoduchá ale zárověn perfektní apka pro poznámky
             </div>
         </div>
 
 
-        <div class="item">
-            <img src="https://miftikcz.github.io/portfolio/assets/projects/ideakeeper.png" item-fotka class="image" height="200" alt="idea keeper 2 image">
-            <div class="head" item-nadpis>Idea Keeper 2</div>
-            <div class="content" item-popisek>
+        <div class="item" item="miftikcz.github.io/idea-keeper-2">
+            <img src="https://miftikcz.github.io/portfolio/assets/projects/ideakeeper.png" alt="idea keeper 2">
+            <div class="head">Idea Keeper 2</div>
+            <div class="content">
                 Vysoce přizpůsobitelná apka pro zachování nápadů
             </div>
         </div>
 
-        <div class="item">
-            <img src="https://miftikcz.github.io/portfolio/assets/projects/setscounter.png" item-fotka class="image" height="200" alt="idea keeper 2 image">
-            <div class="head" item-nadpis>Sets Counter</div>
-            <div class="content" item-popisek>
-                Spočítej si svůje odpracované sety v gymu
+        <div class="item" item="miftikcz.github.io/sets-counter">
+            <img src="https://miftikcz.github.io/portfolio/assets/projects/setscounter.png" alt="sets counter">
+            <div class="head">Sets Counter</div>
+            <div class="content">
+                Spočítej si svoje odpracované sety v gymu
             </div>
         </div>
+
+        <div class="item" item="miftikcz.github.io/griddy-startpage">
+            <img src="https://user-images.githubusercontent.com/89579269/221627883-48f35ff3-396c-484e-add7-3ee7f8916457.png" alt="sets counter">
+            <div class="head">Griddy Startpage</div>
+            <div class="content">
+                Krásná přizpůsobitelná startpage stránka
+            </div>
+        </div>
+
+        <div class="item" item="miftikcz.github.io/masterplay-web/">
+            <img src="https://user-images.githubusercontent.com/89579269/242043636-0e3e4318-5b2a-41c5-a645-4f6f07b38ceb.png" alt="masterplay landing page">
+            <div class="head">Masterplay Web</div>
+            <div class="content">Stránka pro minecraft server <a href="https://discord.masterplay.cz">discord.masterplay.cz</a> s 500> lidmi</div>
+        </div>
+
+        <div class="item" item="miftikcz.github.io/masterplay-statistiky/">
+            <img src="https://user-images.githubusercontent.com/89579269/242052619-c09d8f55-3dda-4cd0-a779-efa5d74f5d11.png" alt="masterplay statistiky page">
+            <div class="head">Masterplay Statistiky Web</div>
+            <div class="content">Stránka pro statistiky minecraft serveru <a href="https://discord.masterplay.cz">discord.masterplay.cz</a> s 500> lidmi</div>
+        </div>
+
+        <div class="item" item="miftikcz.github.io/kachna-clicker">
+            <img src="https://miftikcz.github.io/portfolio/assets/projects/kachna.png" alt="">
+            <div class="head">Zmáčkni kachnu</div>
+            <div class="content">Hra o klikání kachny udělaná v mém custom frameworku</div>
+        </div>
+
+        <div class="item" item="miftikcz.github.io/drinko-app">
+            <img src="https://user-images.githubusercontent.com/89579269/232089866-285518b2-e586-46d1-b7ae-1fcd8805459e.png" alt="">
+            <div class="head">Drinko 3</div>
+            <div class="content">Web apka pro měření pitného režimu</div>
+        </div>
+
+        <div class="item" item="miftikcz.github.io/vlocky">
+            <img src="https://user-images.githubusercontent.com/89579269/233446513-c7b7763c-2e55-444c-975b-c56df77148bc.png" alt="">
+            <div class="head">Recepty na vločky</div>
+            <div class="content">Stránka s mňamózními recepty na vločky</div>
+        </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
