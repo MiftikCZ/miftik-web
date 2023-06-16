@@ -17,9 +17,15 @@ body {
     color: rgb(var(--fg));
     background: #141419 url("background.svg") no-repeat center;
     background-size: cover;
+
     margin: 0;
     padding: 0.5em;
     font-family: var(--font-main);
+    --d: 4px; 
+    /* background: radial-gradient( circle at var(--d) var(--d), #222 calc(var(--d) - 1px), #0000 var(--d) ) 0 0 / 50px 50px #141419; */
+
+
+    background-color: #141419;
 }
 
 header {
@@ -154,7 +160,7 @@ a {
     margin-bottom: 3rem;
 }
 
-body > .projects::before {
+body > .projects.watermark::before {
     content:"Projekty";
     position: absolute;
     bottom: 100%;
@@ -191,7 +197,7 @@ body > .projects .category > .projects {
     justify-content: start;
 }
 
-body > .projects .category > .projects .project {
+body > .projects .category > .projects > a {
     padding: 0.4em 0.75em;
     cursor: pointer;
     color: rgba(var(--fg),80%);
@@ -276,6 +282,15 @@ footer {
     transition: 200ms ease right;
 }
 
+.desktop_view {
+    display: inline;
+}
+
+.mobile_view {
+    display: none;
+}
+
+
 @media (max-width:700px) {
     .head .links {
         text-align: right;
@@ -312,5 +327,13 @@ footer {
     }
     .head #mobile-navbar-show:checked ~ .links .link{
         font-size: 2em !important;
+    }
+
+    .desktop_view {
+        display: none;
+    }
+
+    .mobile_view {
+        display: inline !important;
     }
 }
