@@ -22,6 +22,7 @@ body {
     background-size: cover;
     color: #EEF0F2;
     margin: 0;
+    line-height: 1.2;
     font-family: var(--font-main);
     padding-bottom: 3em;
 }
@@ -34,9 +35,8 @@ body {
     height: 100%;
 }
 
-.section::after {
+.bottom_divider::after {
     content: "";
-
     position: absolute;
     display: block;
     width: calc(100vw - 2em);
@@ -46,15 +46,14 @@ body {
 }
 
 .section.first {
-    background: url("https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGNvbXB1dGVyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60") no-repeat center;
-    background-color: #13232cee;
+    background: url("https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4...3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGNvbXB1dGVyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60") no-repeat center;
+    background-color: #13191dee;
     background-blend-mode: multiply;
     background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background: #13232c; */
-    background: #202020;
+    /* background: #202020; */
 }
 
 .section.first .header {
@@ -64,11 +63,10 @@ body {
     display: flex;
     width: fit-content;
     flex-direction: row;
-    gap: 0.5em;
+    gap: .5em;
     justify-content: center;
     align-items: center;
 }
-
 
 .section.first .header .text {
     display: flex;
@@ -87,68 +85,61 @@ body {
     font-weight: 800;
 }
 
-
 .section.second {
     width: 100%;
     position: relative;
     display: block;
-    /* background: #21373f; */
     padding: 1em;
     overflow: hidden;
 }
-
 
 .section.second .header {
     font-size: 1.2em;
     font-weight: 500;
 }
 
-
 .section.contact .header .more {
     color: #aaa;
-    font-size: 0.9em;
+    font-size: .9em;
 }
 
-
-
-
 .section.second .content {
-    margin-top: 0.5rem;
+    margin-top: .5rem;
     width: 100%;
     color: #ccc;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); 
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     grid-auto-flow: row;
-    gap: 0.5em;
+    gap: .5em;
 }
 
 .section.second .content .box {
     max-width: 800px;
     width: 100%;
     background: #252525;
-    border-radius: 0.25em;
-    padding: 0.5em;
+    border-radius: .25em;
+    padding: .5em;
     border: #eee2 1px solid;
     box-shadow: #0004 0 5px 15px;
 }
 
 .section.second .content .box .title {
     font-size: 1.2em;
-    padding-bottom: 0.25em;
+    padding-bottom: .25em;
     color: #eee;
     font-weight: bold;
     font-family: "Quicksand", sans-serif;
 }
 
 .section.second .content .box .popisek {
-    font-size: 0.8em;
+    font-size: .8em;
     color: #ccc;
 }
 
-.section.second .content .sel, .section.whyme .content .sel {
+.section.whyme .content .sel,
+.section.whyme .sel {
     color: #63e951;
 }
-
 
 .section.whyme {
     display: block;
@@ -156,7 +147,7 @@ body {
 }
 
 .section.whyme .header {
-    padding: 0.5em 0;
+    padding: .5em 0;
     font-size: 1.2em;
     font-weight: 500;
 }
@@ -167,7 +158,6 @@ body {
 }
 
 .section.whyme .content .title .who {
-    /* color: #cec; */
     font-weight: 500;
 }
 
@@ -176,9 +166,8 @@ body {
 }
 
 .section.whyme .content ul {
-    padding: 0.2em unset;
+    padding: .2em unset;
 }
-
 
 .section.whyme .content .note {
     color: #aaa;
@@ -189,7 +178,6 @@ body {
     width: 100%;
     position: relative;
     display: block;
-    /* background: #21373f; */
     padding: 1em;
     overflow: hidden;
 }
@@ -197,13 +185,13 @@ body {
 
 .section.contact .select {
     width: 100%;
-    margin-top: 0.5rem;
+    margin-top: .5rem;
     width: 100%;
     color: #ccc;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     grid-auto-flow: row;
-    gap: 0.5em;
+    gap: .5em;
 }
 
 form {
@@ -211,41 +199,36 @@ form {
     min-width: none;
 }
 
-
 .section.contact .header {
-    padding: 0.5em 0;
+    padding: .5em 0;
     font-size: 1.2em;
     font-weight: 500;
 }
-
 
 .section.contact .select .box {
     max-width: 800px;
     width: 100%;
     background: #252525;
-    border-radius: 0.25em;
-    padding: 0.25em;
+    border-radius: .25em;
+    padding: .25em;
     border: #eee2 1px solid;
     box-shadow: #0004 0 5px 15px;
 }
-
 
 .section.contact .select .box .title {
     width: 100%;
     display: flex;
     font-size: 1.1em;
     justify-content: start;
-    padding-bottom: 0.25em;
+    padding-bottom: .25em;
     color: #eee;
     font-weight: bold;
 }
 
 .section.contact .select .box .popisek {
     color: #ccc;
-    font-size: 0.75em;
+    font-size: .75em;
 }
-
-
 
 .section.contact .content .box.focus {
     border: #4e48 2px solid;
@@ -256,67 +239,87 @@ form {
     color: #4e4;
 }
 
-
 .section.contact .content .box.focus .popisek {
     color: #eee;
 }
 
-
-
-.section.contact .content .inp {
-    font-family: sans-serif;
-    box-shadow: #0004 0 5px 15px;
-    border: hidden;
+.section.contact label {
+    display: block;
     font-size: 0.8em;
-    padding: 0.25em 0.5em;
-    /* border-radius: 0.1em; */
-    background: #cccccc;
+}
+
+.section.contact label.need::after {
+    content:" *";
+    color: rgb(238, 82, 82);
+}
+.section.contact .content .inp {
+    box-shadow: 0 3px 8px #0004;
+    font-family: sans-serif;
+    width: 100%;
+    border: hidden;
+    font-size: .8em;
+    padding: .25em .5em;
     background: #ccc1;
-    border-bottom: rgb(85, 181, 85) 0.15em solid;
-    color: #eee;    
+    border: #0000 1px solid;
+    border-radius: 0.5em;
+    color: #eee;
+    display: block;
+    margin-bottom: 1.5rem;
+}
+
+.section.contact .content .inp:focus {
+    border-color: rgb(85, 181, 85);
+}
+
+.section.contact .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section.contact .content .inputs {
+    max-width: 900px;
+    width: 100%;
 }
 
 .section.contact .content .inp:focus-within {
     outline: none;
-    border-bottom-color: #4e4;  
+    border-bottom-color: #4e4
 }
 
 .section.contact .content .submit {
-    margin-top: 0.5em;
+    margin-top: .5em;
     box-shadow: #0004 0 5px 15px;
     border: hidden;
-    padding: 0.25em 0.5em;
-    border-radius: 0.2em;
-    background: #cccccc;
-    background: #ccc1;
+    padding: .25em .5em;
+    border-radius: .2em;
     background: #4e4;
-    color: #222;    
-    font-size: 0.9em;
+    border-bottom: #0005 0.2em solid;
+    color: #132c0b;
+    font-size: 1.1em;
     cursor: pointer;
 }
 
-.section.contact .content .submit {
-    margin-top: 0.5em;
-    box-shadow: #0004 0 5px 15px;
-    border: hidden;
-    padding: 0.25em 0.5em;
-    border-radius: 0.2em;
-    background: #cccccc;
-    background: #ccc1;
-    background: #4e4;
-    color: #222;    
-    font-size: 0.9em;
-    cursor: pointer;
+.section.contact .content .submit:active {
+    border-bottom: #0005 0em solid;
 }
 
-.section.contact .content .submit.cant {
-    font-style: italic;
-    cursor: not-allowed;
-    background: rgba(132, 155, 132, 0.563);
-    color: #333;
-}
-
-.section.contact .content .submit.cant ~ .podtext {
-    font-size: 0.8em;
+.podtext {
     color: #eeea;
+    font-size: .8em;
+    margin-bottom: 1.5rem;
+}
+
+#what-will-send {
+    display: block;
+    background: #252525;
+    padding: 0.5rem;
+    box-shadow: 0 3px 8px #0004;
+    font-size: 0.8em;
+    font-family: monospace;
+    white-space: pre-wrap;
+    overflow: auto;
+    word-wrap: break-word;
+    -ms-word-wrap: break-word;
+    max-width: 800px;
 }
