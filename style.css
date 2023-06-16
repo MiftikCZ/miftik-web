@@ -17,29 +17,25 @@ body {
     color: rgb(var(--fg));
     background: #141419 url("background.svg") no-repeat center;
     background-size: cover;
-
     margin: 0;
-    padding: 0.5em;
+    padding: .5em;
     font-family: var(--font-main);
-    --d: 4px; 
-    /* background: radial-gradient( circle at var(--d) var(--d), #222 calc(var(--d) - 1px), #0000 var(--d) ) 0 0 / 50px 50px #141419; */
-
-
+    --d: 4px;
     background-color: #141419;
 }
 
 header {
     text-align: right;
     border-bottom: #272637 2px solid;
-    padding: 0.5em;
+    padding: .5em;
 }
 
 header a {
-    padding: 0.4em;
+    padding: .4em;
     text-decoration: none;
-    margin-right: 0.5rem;
-    border-radius: 0.2em;
-    transition: 200ms ease;    
+    margin-right: .5rem;
+    border-radius: .2em;
+    transition: 200ms ease
 }
 
 header a:hover {
@@ -62,16 +58,15 @@ header a:last-child {
     font-family: var(--font-second);
     width: 100%;
     font-size: 2.5em;
-    letter-spacing: 0.03em;
+    letter-spacing: .03em;
     font-weight: bold;
 }
 
 .first .quick {
-    /* width: 100%; */
     max-width: 600px;
     align-self: center;
     display: flex;
-    gap: 0.5em;
+    gap: .5em;
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -83,21 +78,18 @@ header a:last-child {
     height: fit-content;
     font-size: 1em;
     background: #272637;
-    border-radius: 0.2em;
-    padding: 0.5em 1em;
+    border-radius: .2em;
+    padding: .5em 1em;
     transition: 200ms;
-    border-bottom: #0004 0.25em solid;
+    border-bottom: #0004 .25em solid;
     position: relative;
     transition: 200ms;
     bottom: 0;
 }
 
 .first .quick .link:hover {
-    /* padding: 1em; */
-    /* background: rgb(57, 93, 93); */
     color: #fff;
-    bottom: 0.25em;
-
+    bottom: .25em;
 }
 
 .bigwidget {
@@ -105,8 +97,8 @@ header a:last-child {
     width: 100%;
     background: #0004;
     height: 100%;
-    padding: 0.5em;
-    border-radius: 0.25em;
+    padding: .5em;
+    border-radius: .25em;
 }
 
 a {
@@ -118,36 +110,42 @@ a {
     font-weight: 500;
 }
 
-.bigwidget.contribute::before,.bigwidget.contact::before,.bigwidget.about::before {
-    content:"Spolupráce";
+.bigwidget.contribute::before,
+.bigwidget.contact::before,
+.bigwidget.about::before,
+body>.projects.watermark::before {
+    content: "Spolupráce";
     position: absolute;
     bottom: 100%;
     right: 0;
-    padding: 0.2em 0.5em;
+    padding: .2em .5em;
     background: #0004;
 }
 
+
+body>.projects.watermark::before {
+    content: "Projekty";
+}
+
 .bigwidget.contact::before {
-    content:"Kontakt";
+    content: "Kontakt";
 }
 
 .bigwidget.about::before {
-    content:"Něco o mně";
+    content: "Něco o mně";
 }
 
 .imakewebs {
-    /* background: rgb(41, 45, 74); */
-    background: hsl(220,28%,15%);
+    background: hsl(220, 28%, 15%);
     box-shadow: #0004 0 5px 15px;
 }
 
 .imakewebs .sel {
-    color: rgb(83, 131, 252);
-    /* color: hsl(220,60%,50%); */
+    color: rgb(83, 131, 252)
 }
 
 .bigwidget.contribute {
-  display: block;
+    display: block;
 }
 
 .bigwidget.center {
@@ -160,36 +158,24 @@ a {
     margin-bottom: 3rem;
 }
 
-body > .projects.watermark::before {
-    content:"Projekty";
-    position: absolute;
-    bottom: 100%;
-    right: 0;
-    padding: 0.2em 0.5em;
-    background: #0004;
-}
-
-body > .projects {
+body>.projects {
     position: relative;
     width: 100%;
     background: #0004;
     height: 100%;
-    padding: 0.5em;
-    border-radius: 0.25em;
+    padding: .5em;
+    border-radius: .25em;
 }
 
-
-body > .projects .category .title {
+body>.projects .category .title {
     font-size: 1.25em;
     font-weight: 500;
-    padding-bottom: 0.5rem;
-
+    padding-bottom: .5rem;
     font-family: var(--font-second);
 }
 
-
-body > .projects .category > .projects {
-    gap: 0.3em;
+body>.projects .category>.projects {
+    gap: .3em;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -197,15 +183,14 @@ body > .projects .category > .projects {
     justify-content: start;
 }
 
-body > .projects .category > .projects > a {
-    padding: 0.4em 0.75em;
+body>.projects .category>.projects>a {
+    padding: .4em .75em;
     cursor: pointer;
-    color: rgba(var(--fg),80%);
-    border-radius: 0.25em;
+    color: rgba(var(--fg), 80%);
+    border-radius: .25em;
     display: inline-block;
     text-decoration: none;
-
-    border-bottom: #0004 0.3em solid;
+    border-bottom: #0004 .3em solid;
     background: #201f23;
     transition: 200ms;
     position: relative;
@@ -213,49 +198,45 @@ body > .projects .category > .projects > a {
     bottom: 0;
 }
 
-body > .projects .category > .projects .project.novinka {
+body>.projects .category>.projects .project.novinka {
     background: #272637;
 }
 
-body > .projects .category > .projects .project.novinka::after {
-    content:"novinka!";
+body>.projects .category>.projects .project.novinka::after {
+    content: "novinka!";
     z-index: 100;
     background: #7f7ab8;
     color: #201f23;
-    padding: 0.1em 0.3em;
-    border-radius: 0.8em;
+    padding: .1em .3em;
+    border-radius: .8em;
     display: inline-block;
     position: absolute;
-    font-size: 0.7em;
+    font-size: .7em;
     rotate: 2deg;
     right: -1rem;
     bottom: calc(100% - 1em);
 }
 
-body > .projects .category > .projects .project:hover {
-    bottom: 0.25em;
+body>.projects .category>.projects .project:hover {
+    bottom: .25em;
 }
 
-
-
-
-@media (max-width: 650px) {
+@media (max-width:650px) {
     :root {
-        font-size: 22px;
+        font-size: 22px
     }
 
     .first .quick .link {
-        font-size: 1.25em;
+        font-size: 1.25em
     }
 
-    body > .projects .category > .projects { 
-        justify-content: center;
+    body>.projects .category>.projects {
+        justify-content: center
     }
 
-    body > .projects .category > .projects .project {
-        padding: 0.7em 0.75em;
-        font-size: 1.2em;
-        /* font-size: 1.1em; */
+    body>.projects .category>.projects .project {
+        padding: .7em .75em;
+        font-size: 1.2em
     }
 }
 
@@ -270,7 +251,8 @@ footer {
     position: relative;
 }
 
-.head #mobile-navbar-show, .head .mobile-navbar-show {
+.head #mobile-navbar-show,
+.head .mobile-navbar-show {
     display: none;
 }
 
@@ -290,17 +272,16 @@ footer {
     display: none;
 }
 
-
 @media (max-width:700px) {
     .head .links {
-        text-align: right;
+        text-align: right
     }
 
     .head .mobile-navbar-show {
-        user-select: none;        
+        user-select: none;
         z-index: 20;
         display: block;
-        position: relative;
+        position: relative
     }
 
     .head nav {
@@ -310,30 +291,30 @@ footer {
         position: fixed;
         width: 100%;
         height: 100vh;
-        /* left: 0; */
         right: 0;
         top: 0;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items: center
     }
 
-    .head #mobile-navbar-show:not(:checked) ~ nav{
-        right: -100%;
-        /* position: absolute; */
+    .head #mobile-navbar-show:not(:checked)~nav {
+        right: -100%
     }
-    .head #mobile-navbar-show:checked ~ nav{
-        right: 0;
+
+    .head #mobile-navbar-show:checked~nav {
+        right: 0
     }
-    .head #mobile-navbar-show:checked ~ .links .link{
-        font-size: 2em !important;
+
+    .head #mobile-navbar-show:checked~.links .link {
+        font-size: 2em !important
     }
 
     .desktop_view {
-        display: none;
+        display: none
     }
 
     .mobile_view {
-        display: inline !important;
+        display: inline !important
     }
 }

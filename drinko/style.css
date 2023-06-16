@@ -3,16 +3,19 @@
 body {
     margin: 0;
     padding: 0;
-font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
+
 .panel {
     padding: 2px;
-    font-weight:600;
+    font-weight: 600;
 }
+
 .panel-title {
     font-size: 32px;
     margin-left: 16px;
 }
+
 .add-sklenicka {
     margin: 4px 3px;
     width: 95%;
@@ -32,17 +35,15 @@ font-family: 'Poppins', sans-serif;
 .goal-input {
     background: transparent;
     border-bottom: 4px hsl(208, 20%, 29%) solid;
-    border-radius: 0px;
+    border-radius: 0;
     padding: 4px 18px;
     color: #fff;
     transition: 250ms;
 }
 
-
 .goal-input:hover {
     border-bottom: 4px hsl(208, 60%, 29%) solid;
 }
-
 
 .goal-tlacitko {
     border-radius: 8px;
@@ -51,20 +52,15 @@ font-family: 'Poppins', sans-serif;
     transition: 250ms;
 }
 
-
-
 .goal-tlacitko:hover {
     background: hsl(208, 60%, 29%);
 }
-
-
-
 
 .title2 {
     display: inline-block;
     color: rgb(179, 136, 136);
     rotate: -5deg;
-    font-weight:600;
+    font-weight: 600;
 }
 
 .rozdelovac2 {
@@ -89,28 +85,27 @@ font-family: 'Poppins', sans-serif;
 }
 
 .vyzn {
-
     color: rgb(119, 207, 105);
-    font-weight:600;
-font-style:normal;
+    font-weight: 600;
+    font-style: normal;
 }
 
 .zbyva_ {
     color: rgb(119, 207, 105);
-    font-weight:600;
-font-style:normal;
-
+    font-weight: 600;
+    font-style: normal;
 }
 
 .lomitko {
-user-select:none;
-     font-size:28px;
+    user-select: none;
+    font-size: 28px;
 }
+
 .popis {
-color: #7c7c7c;
-        font-size: 38px;
+    color: #7c7c7c;
+    font-size: 38px;
 }
 
 .cont {
-   box-shadow: #000  1px 2px 20px 2px;
+    box-shadow: #000 1px 2px 20px 2px;
 }

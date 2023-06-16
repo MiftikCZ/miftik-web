@@ -1,10 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,400&family=Roboto:ital,wght@0,300;0,400;0,500;1,400;1,500&display=swap');
-*  {
+
+* {
     font-family: "Poppins";
 }
+
 :root {
     --nat-h: 5;
 }
+
 body {
     margin: 0;
     padding: 0;
@@ -16,7 +19,7 @@ body {
 }
 
 .nat-color {
-    color: hsl(var(--nat-h),37%,48%);
+    color: hsl(var(--nat-h), 37%, 48%);
 }
 
 header {
@@ -34,7 +37,7 @@ header {
     font-family: "Poppins";
     font-style: italic;
     font-weight: 600;
-letter-spacing: 3px;
+    letter-spacing: 3px;
 }
 
 main {
@@ -65,13 +68,13 @@ main {
     border-radius: 10px;
     transition: 400ms;
 }
+
 .tlacitko:hover {
     color: #fff;
     background: hsl(var(--nat-h), 37%, 28%);
 }
 
 .odpoved {
-
     margin-left: 10px;
     padding: 20px;
     display: inline-block;
@@ -80,23 +83,22 @@ main {
     width: 80%;
 }
 
-
 .odptext {
     color: #cfcfcf;
     margin-left: 20px;
 }
 
-
-
 b {
     color: #fefeff;
     text-shadow: 2px 2px 2px #000;
 }
+
 .rozdelovac-cont {
     width: 100%;
     display: inline-block;
     text-align: center;
 }
+
 .rozdelovac {
     display: inline-block;
     margin-top: 24px;
@@ -115,7 +117,6 @@ b {
     font-weight: 500;
     color: hsl(var(--nat-h), 37%, 48%);
 }
-
 
 .odpbutton {
     background: #fff5;
