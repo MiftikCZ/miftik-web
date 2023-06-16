@@ -1,33 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/3dc9caaf6f.js" crossorigin="anonymous"></script>    
-    
+    <script src="https://kit.fontawesome.com/3dc9caaf6f.js" crossorigin="anonymous"></script>
+
     <!-- Primary Meta Tags -->
     <title>MiftikCZ web</title>
     <link rel="shortcut icon" href="icon.svg" type="image/x-icon">
-    <meta name="title" content="MiftikCZ web"><meta name="keywords" content="miftikcz, web developer, preact developer, preact.js, typescript developer, miftikcz github, miftikraid">
+    <meta name="title" content="MiftikCZ web">
+    <meta name="keywords"
+        content="miftikcz, web developer, preact developer, preact.js, typescript developer, miftikcz github, miftikraid">
     <meta name="author" content="MiftikCZ">
     <meta name="description" content="Oficiální stránka vývojáře MiftikCZ kde najdeš moje projekty!">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://miftik.tk/">
+    <meta property="og:url" content="https://miftik.xyz/">
     <meta property="og:title" content="MiftikCZ web">
     <meta property="og:description" content="Oficiální stránka vývojáře MiftikCZ kde najdeš moje projekty!">
     <meta property="og:image" content="https://miftik.tk/thumbnail.jpg">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://miftik.tk">
+    <meta property="twitter:url" content="https://miftik.xyz">
     <meta property="twitter:title" content="MiftikCZ web">
     <meta property="twitter:description" content="Oficiální stránka vývojáře MiftikCZ kde najdeš moje projekty!">
     <meta property="twitter:image" content="https://miftik.tk/thumbnail.jpg">
 </head>
+
 <body>
     <header class="head">
         <input type="checkbox" name="" id="mobile-navbar-show" />
@@ -35,7 +39,7 @@
         <nav>
             <a href="/" target="_self">Home</a>
             <a href="./portfolio/" target="_self" navbar-link>Portfolio</a>
-            <a href="#blog" target="_self" navbar-link>Blog</a>
+            <a href="./blog" target="_self" navbar-link>Blog</a>
             <a href="#contact" target="_self" navbar-link>Contact</a>
         </nav>
     </header>
@@ -51,17 +55,20 @@
         </div>
     </div>
     <div class="bigwidget center imakewebs bottomgap">
-        <p>Jsem schopný ti <span class="sel">vytvořit stránku</span> za <span class="sel">nízkou cenu</span>, pokud máš zájem, <a href="./stranka">jukni sem</a> 👀</p>
+        <p class="desktop_view">Jsem schopný ti <span class="sel">vytvořit stránku</span> za <span class="sel">nízkou
+                cenu</span>, pokud máš zájem, <a href="./stranka">jukni sem</a> 👀</p>
+        <p class="mobile_view" hidden>Máš-li zájem o <span class="sel">levnou stránku</span>, <a href="./stranka">napiš
+                mi</a> 👀</p>
     </div>
 
-    <div class="projects bottomgap">
+    <div class="projects watermark bottomgap">
         <div class="category">
             <div class="title">Užitečné</div>
             <div class="projects">
-                <a class="project" href="https://miftikcz.github.io/idea-keeper-2">Idea Keeper</a>
-                <a class="project" href="https://miftikcz.github.io/note_keeper">Note Keeper</a>
-                <a class="project" href="./counter">Počítadlo</a>
-                <a class="project" href="./notepad">Notepad</a>
+                <a href="https://miftikcz.github.io/idea-keeper-2">Idea Keeper</a>
+                <a href="https://miftikcz.github.io/note_keeper">Note Keeper</a>
+                <a href="./counter">Počítadlo</a>
+                <a href="./notepad">Notepad</a>
             </div>
         </div>
 
@@ -69,124 +76,127 @@
             <div class="title">Zábava</div>
             <div class="projects">
                 <a href="https://miftikcz.github.io/ezviratka" class="project novinka">E Zvířátka</a>
-                <a class="project" href="https://gd.games/games/698061a3-b9fc-4568-8132-f43aa467ed22">Kolotoc</a>
-                <a class="project" href="https://miftikcz.github.io/kachna-clicker">Zmáčkni kachnu</a>
-                <a class="project" href="./games">Moje hry</a>
-                <a class="project" href="http://miftweb.epizy.com/scratch/">Scratch projekty</a>
-                <a class="project" href="https://miftikcz.itch.io">itch.io</a>
+                <a href="https://gd.games/games/698061a3-b9fc-4568-8132-f43aa467ed22">Kolotoc</a>
+                <a href="https://miftikcz.github.io/kachna-clicker">Zmáčkni kachnu</a>
+                <a href="./games">Moje hry</a>
+                <a href="http://miftweb.epizy.com/scratch/">Scratch projekty</a>
+                <a href="https://miftikcz.itch.io">itch.io</a>
             </div>
         </div>
 
         <div class="category">
             <div class="title">Nástroje</div>
             <div class="projects">
-                <a class="project" href="https://github.com/MiftikCZ/pinguin">Pinguin</a>
-                <a class="project" href="https://miftikcz.github.io/whiteboard">Kreslení</a>
-                <a class="project" href="https://github.com/MiftikCZ/exfetch">ExFetch</a>
-                <a class="project" href="./ub">Web unblocked</a>
-                <a class="project" href="https://c.miftik.tk">URL Shortener</a>
-                <a class="project" href="https://edlinkme.miftik.tk">EDLinkME</a>
+                <a href="https://github.com/MiftikCZ/pinguin">Pinguin</a>
+                <a href="https://miftikcz.github.io/whiteboard">Kreslení</a>
+                <a href="https://github.com/MiftikCZ/exfetch">ExFetch</a>
+                <a href="./ub">Web unblocked</a>
+                <a href="https://c.miftik.tk">URL Shortener</a>
+                <a href="https://edlinkme.miftik.tk">EDLinkME</a>
             </div>
         </div>
 
         <div class="category">
             <div class="title">Staré</div>
             <div class="projects">
-                <a class="project" href="https://s.miftik.tk">Vyhledávač</a>
-                <a class="project" href="./todo">TODO app</a>
-                <a class="project" href="http://miftweb.epizy.com/clock">Hodiny</a>
-                <a class="project" href="./old.html">Stará verze</a>
-                <a class="project" href="./old">Starší verze</a>
-                <a class="project" href="http://miftweb.epizy.com">Nejstarší verze</a>
+                <a href="https://s.miftik.tk">Vyhledávač</a>
+                <a href="./todo">TODO app</a>
+                <a href="http://miftweb.epizy.com/clock">Hodiny</a>
+                <a href="./old.html">Stará verze</a>
+                <a href="./old">Starší verze</a>
+                <a href="http://miftweb.epizy.com">Nejstarší verze</a>
             </div>
         </div>
 
         <div class="category">
             <div class="title">Ostatní</div>
             <div class="projects">
-                <a class="project" href="https://tiktok.com/@miftikcz"><i class="fa-brands fa-tiktok"></i> Tiktok</a>
-                <a class="project" href="./games">Hry</a>
-                <a class="project" href="https://github.com/MiftikCZ/dirty-script">Dirty script</a>
-                <a class="project" href="https://miftikcz.github.io/gogit">GoGit</a>
-                <a class="project" href="https://www.mediafire.com/file/v5o4gmqxz7ej4ym/%25C2%25A71MiftikCZ_Pack%25C2%25A78.zip/file">Resource pack</a>
+                <a href="https://tiktok.com/@miftikcz"><i class="fa-brands fa-tiktok"></i> Tiktok</a>
+                <a href="./games">Hry</a>
+                <a href="https://github.com/MiftikCZ/dirty-script">Dirty script</a>
+                <a href="https://miftikcz.github.io/gogit">GoGit</a>
+                <a href="https://www.mediafire.com/file/v5o4gmqxz7ej4ym/%25C2%25A71MiftikCZ_Pack%25C2%25A78.zip/file">Resource
+                    pack</a>
             </div>
         </div>
 
         <div class="category">
             <div class="title">Uč se</div>
             <div class="projects">
-                <a class="project" href="https://github.com/MiftikCZ/bot-tutorial">Bot tutorial</a>
-                <a class="project" href="./python">Python tutorial</a>
+                <a href="https://github.com/MiftikCZ/bot-tutorial">Bot tutorial</a>
+                <a href="./python">Python tutorial</a>
             </div>
         </div>
 
         <div class="category">
             <div class="title">Discord</div>
             <div class="projects">
-                <a class="project" href="math/"><i class="fa-brands fa-discord"></i> Matematiky</a>
-                <a class="project" href="https://discord.com/api/oauth2/authorize?client_id=871641284941606923&permissions=8&scope=bot">ElimRaid</a>
-                <a class="project" href="https://discord.com/oauth2/authorize?client_id=860826202154467390&permissions=8&scope=bot">Stats+</a>
-                <a class="project" href="https://github.com/MiftikCZ/MiftikRAID">MiftikRAID</a>
-                <a class="project" href="https://github.com/MiftikCZ/webhookspammer">Webhook Spammer</a>
-                <a class="project" href="https://github.com/MiftikCZ/bot-tutorial">Bot tutorial</a>
+                <a href="math/"><i class="fa-brands fa-discord"></i> Matematiky</a>
+                <a
+                    href="https://discord.com/api/oauth2/authorize?client_id=871641284941606923&permissions=8&scope=bot">ElimRaid</a>
+                <a
+                    href="https://discord.com/oauth2/authorize?client_id=860826202154467390&permissions=8&scope=bot">Stats+</a>
+                <a href="https://github.com/MiftikCZ/MiftikRAID">MiftikRAID</a>
+                <a href="https://github.com/MiftikCZ/webhookspammer">Webhook Spammer</a>
+                <a href="https://github.com/MiftikCZ/bot-tutorial">Bot tutorial</a>
             </div>
         </div>
 
         <div class="category">
             <div class="title">Fitness</div>
             <div class="projects">
-                <a class="project" href="https://discord.gg/Paur9PRXRb"><i class="fa-brands fa-discord"></i> Fitness</a>
-                <a class="project" href="https://miftik.tk/posilovani">Fitness help</a>
-                <a class="project" href="https://miftikcz.github.io/drinko-app">Sledovač vody</a>
-                <a class="project" href="https://github.com/MiftikCZ/drinko_native">Drinko APK</a>
-                <a class="project" href="https://miftikcz.github.io/sets-counter">Sets counter</a>
-                <a class="project" href="https://miftikcz.github.io/kalc-track">Počítadlo kalorií</a>
+                <a href="https://discord.gg/Paur9PRXRb"><i class="fa-brands fa-discord"></i> Fitness</a>
+                <a href="https://miftik.tk/posilovani">Fitness help</a>
+                <a href="https://miftikcz.github.io/drinko-app">Sledovač vody</a>
+                <a href="https://github.com/MiftikCZ/drinko_native">Drinko APK</a>
+                <a href="https://miftikcz.github.io/sets-counter">Sets counter</a>
+                <a href="https://miftikcz.github.io/kalc-track">Počítadlo kalorií</a>
             </div>
         </div>
 
         <div class="category">
             <div class="title">Vylepšení</div>
             <div class="projects">
-                <a class="project" href="https://github.com/MiftikCZ/dotfiles">Dotfiles</a>
-                <a class="project" href="https://github.com/MiftikCZ/tabliss-config">Tabliss config</a>
-                <a class="project" href="https://github.com/MiftikCZ/ddg_theme_script">Duckduckgo themes</a>
-                <a class="project" href="https://miftikcz.github.io/text_generator">Text generator</a>
+                <a href="https://github.com/MiftikCZ/dotfiles">Dotfiles</a>
+                <a href="https://github.com/MiftikCZ/tabliss-config">Tabliss config</a>
+                <a href="https://github.com/MiftikCZ/ddg_theme_script">Duckduckgo themes</a>
+                <a href="https://miftikcz.github.io/text_generator">Text generator</a>
             </div>
         </div>
 
         <div class="category">
             <div class="title">Startpages</div>
             <div class="projects">
-                <a class="project" href="https://miftikcz.github.io/griddy-startpage">Griddy</a>
-                <a class="project" href="https://miftikcz.github.io/blobstart">Blobstart</a>
-                <a class="project" href="https://miftikcz.github.io/vrabec-startpage">Vrabec</a>
-                <a class="project" href="https://miftikcz.github.io/hotkey-startpage">Hotkey</a>
-                <a class="project" href="https://miftikcz.github.io/mountains-startpage">Mountains</a>
-                <a class="project" href="https://miftikcz.github.io/yet-another-startpage">"Yet Another One"</a>
-                <a class="project" href="https://miftikcz.github.io/another-startpage">"Another"</a>
+                <a href="https://miftikcz.github.io/griddy-startpage">Griddy</a>
+                <a href="https://miftikcz.github.io/blobstart">Blobstart</a>
+                <a href="https://miftikcz.github.io/vrabec-startpage">Vrabec</a>
+                <a href="https://miftikcz.github.io/hotkey-startpage">Hotkey</a>
+                <a href="https://miftikcz.github.io/mountains-startpage">Mountains</a>
+                <a href="https://miftikcz.github.io/yet-another-startpage">"Yet Another One"</a>
+                <a href="https://miftikcz.github.io/another-startpage">"Another"</a>
             </div>
         </div>
 
         <div class="category">
             <div class="title">Objevuj</div>
             <div class="projects">
-                <a class="project" href="https://miftikcz.github.io/vlocky">Recepty</a>
-                <a class="project" href="github.com/MiftikCZ/vlocky_native">Recepty APK</a>
+                <a href="https://miftikcz.github.io/vlocky">Recepty</a>
+                <a href="github.com/MiftikCZ/vlocky_native">Recepty APK</a>
             </div>
         </div>
 
         <div class="category" id="blog">
             <div class="title">Blog</div>
             <div class="projects">
-                <a class="project" href="./blog/gigachad_tutorial/">Jak se stát gigachadem</a>
-                <a class="project" href="./blog/jak_se_lepe_vyspat/">Jak se lépe vyspat</a>
+                <a href="./blog/gigachad_tutorial/">Jak se stát gigachadem</a>
+                <a href="./blog/jak_se_lepe_vyspat/">Jak se lépe vyspat</a>
             </div>
         </div>
     </div>
 
     <div class="bigwidget contribute bottomgap">
         <p>Rád publikuji do <span class="sel">open source</span> komunity, <br>
-        proto bych byl rád za jakoukoliv formu spolupráce na mém githubu nebo <span class="sel">i tvém!</span></p>
+            proto bych byl rád za jakoukoliv formu spolupráce na mém githubu nebo <span class="sel">i tvém!</span></p>
 
         <p>Pokud máš zájem, koukni <a href="./stranka">sem</a></p>
     </div>
@@ -194,15 +204,16 @@
     <div class="bigwidget contact bottomgap" id="contact">
         Máš zájem o vytvoření stránky nebo mi chceš něco napsat?, <br><br>
         Můj email: <span class="copy sel">memertv17@proton.me</span><br>
-        Můj instagram: <a class="copy sel" href="//instagram.com/miftikcz_">miftikcz_</a><br><br>
         A moje jméno je <span class="sel">Kuba Kollár</span> ale přezdívka je MiftikCZ ;D
     </div>
 
     <div class="bigwidget about bottomgap" id="about">
         <p>Jsem programátor a vývojář webových stránek i aplikací. Zajímám se o sport, zvířata, přírodu a kódování.<br>
-        Celkem mi jde <span class="sel">clonování webovek v HTML/CSS</span> podle připraveného designu. 
+            Celkem mi jde <span class="sel">clonování webovek v HTML/CSS</span> podle připraveného designu.
         </p>
-        <p>Pro vývoj webovek používám rád Preact.js a <span class="sel">čistý HTML/CSS/JS</span>. Myslím že nejvíce mi jde <span class="sel">JavaScript</span> ale preferuji TypeScript. Zvládnu trochu programovací jazyk rust. Umím také flutter (android app dev) a svelte.</p>
+        <p>Pro vývoj webovek používám rád Preact.js a <span class="sel">čistý HTML/CSS/JS</span>. Myslím že nejvíce mi
+            jde <span class="sel">JavaScript</span> ale preferuji TypeScript. Zvládnu trochu programovací jazyk rust.
+            Umím také flutter (android app dev) a svelte.</p>
     </div>
 
     <div class="bigwidget testik center bottomgap">
@@ -212,7 +223,7 @@
     <footer>
         <div class="text">Vytvořil <span class="sel">MiftikCZ</span> s 💕</div>
     </footer>
-    
+
     <script>
         // open all the links in new tab
         document.querySelectorAll("a").forEach(el => {
@@ -222,10 +233,11 @@
         const mobileNavbarShow = document.getElementById("mobile-navbar-show")
 
         document.querySelectorAll("[navbar-link]").forEach(el => {
-            el.addEventListener("click", ()=>{
+            el.addEventListener("click", () => {
                 mobileNavbarShow.checked = false
             })
         })
     </script>
 </body>
+
 </html>
