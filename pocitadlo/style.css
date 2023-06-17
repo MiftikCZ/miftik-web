@@ -73,7 +73,12 @@ main {
     text-align: center;
     border: none;
     background: transparent;
-    border-radius: 0px;
+    border-radius: 8px;
+    transition: 200ms;
+}
+.add-pocitadlo-text:focus-within {
+    outline: none;
+    background: #4a426340;
 }
 .add-pocitadlo-button {
     font-size: 1rem;
