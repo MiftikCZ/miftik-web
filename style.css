@@ -183,7 +183,7 @@ body>.projects .category>.projects {
     justify-content: start;
 }
 
-body>.projects .category>.projects>a {
+body>.projects .category>.projects a {
     padding: .4em .75em;
     cursor: pointer;
     color: rgba(var(--fg), 80%);
@@ -198,11 +198,11 @@ body>.projects .category>.projects>a {
     bottom: 0;
 }
 
-body>.projects .category>.projects .project.novinka {
+body>.projects .category>.projects a.novinka {
     background: #272637;
 }
 
-body>.projects .category>.projects .project.novinka::after {
+body>.projects .category>.projects a.novinka::after {
     content: "novinka!";
     z-index: 100;
     background: #7f7ab8;
@@ -217,7 +217,7 @@ body>.projects .category>.projects .project.novinka::after {
     bottom: calc(100% - 1em);
 }
 
-body>.projects .category>.projects .project:hover {
+body>.projects .category>.projects a:hover {
     bottom: .25em;
 }
 
@@ -234,7 +234,7 @@ body>.projects .category>.projects .project:hover {
         justify-content: center
     }
 
-    body>.projects .category>.projects .project {
+    body>.projects .category>.projects a {
         padding: .7em .75em;
         font-size: 1.2em
     }
@@ -252,7 +252,8 @@ footer {
 }
 
 .head #mobile-navbar-show,
-.head .mobile-navbar-show {
+.head .mobile-navbar-show,
+.mobile_view {
     display: none;
 }
 
@@ -266,10 +267,6 @@ footer {
 
 .desktop_view {
     display: inline;
-}
-
-.mobile_view {
-    display: none;
 }
 
 @media (max-width:700px) {
