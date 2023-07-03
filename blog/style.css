@@ -50,17 +50,22 @@
  }
 
  main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: .75em;
      padding-top: .75rem;
  }
 
- main {
-     padding: .75em;
- }
 
  main h2 {
      color: var(--primary);
-     font-family: "Fira Sans";
+     font-family: "rubik";
  }
+
+h1 {
+    font-size: 2em;
+}
 
  main b {
      text-decoration: #0005 underline solid 4px;
@@ -82,6 +87,7 @@
  main .napsal {
      background: #2281;
      padding: .25em 0;
+     width: 100%;
      color: #444;
      font-size: .9em;
  }
@@ -97,6 +103,11 @@
      height: 100%;
      vertical-align: middle;
  }
+
+article {
+    width: 100%;
+    max-width: 1100px;
+}
 
  @media (max-width:700px) {
      header .text {
@@ -131,10 +142,10 @@
  .findmore{
     cursor: pointer;
     width: 100%;
-    max-width: 100px;
+    max-width: 10em;
     font-weight: 600;
     font-family: "fira sans";
-    font-size: 1rem;
+    font-size: 1.8rem;
     padding: 0.2rem 0.5rem;
     border-radius: 0.2rem;
     box-shadow: var(--secondary) -.3em .3em 0;
@@ -142,8 +153,9 @@
     color: hsl(var(--hue), 27%, 75%);
     color: var(--secondary);
     background: #0000;
+    transition: 200ms;
  }
 
  .findmore:hover{
-
+    transform: translateY(-6px);
  }
