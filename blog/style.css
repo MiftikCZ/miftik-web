@@ -5,6 +5,7 @@
      --bg: #eee;
      --hue: 198;
      --primary: hsl(var(--hue), 70%, 15%);
+     --secondary: hsl(calc(var(--hue) + 10), 60%, 10%);
      --fg: #222;
      --place-bg: center;
  }
@@ -120,4 +121,29 @@
      display: block;
      height: 2px;
      background: #4445;
+ }
+
+ .findmorea {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+ }
+ .findmore{
+    cursor: pointer;
+    width: 100%;
+    max-width: 100px;
+    font-weight: 600;
+    font-family: "fira sans";
+    font-size: 1rem;
+    padding: 0.2rem 0.5rem;
+    border-radius: 0.2rem;
+    box-shadow: var(--secondary) -.3em .3em 0;
+    border: none;
+    color: hsl(var(--hue), 27%, 75%);
+    color: var(--secondary);
+    background: #0000;
+ }
+
+ .findmore:hover{
+
  }
