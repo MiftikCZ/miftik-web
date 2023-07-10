@@ -20,14 +20,19 @@ body {
 .header {
     margin: auto;
     height: 24vh;
+    min-height: 90px;
     width: 100%;
     color: var(--clr);
-    background: rgba(0, 0, 0, .2);
+    background: #00000033;
     position: relative;
     display: inline-flex;
     text-align: center;
     align-items: center;
     justify-content: center;
+}
+
+.font-monospace {
+    font-family: monospace !important;
 }
 
 .get_proj_name:hover {
@@ -52,6 +57,7 @@ body {
     height: 100%;
     max-width: 100vw;
     width: 100%;
+    resize: none;
 }
 
 .main {
@@ -65,14 +71,19 @@ body {
     outline: none;
 }
 
-.main-2 {
-    display: flex;
-    margin: auto;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+#monospace:checked ~ label[for="monospace"] {
+    border-color: var(--clr);
+    color: var(--clr);
 }
 
-.block_class {
-    display: block;
+.button-mono {
+    all: unset;
+    user-select: none;
+    color: #2227;
+    cursor: pointer;
+    transition: 200ms;
+}
+
+.button-mono:hover {
+    color: var(--clr);
 }
