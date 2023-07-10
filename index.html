@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="cz">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,7 +18,7 @@
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://miftik.xyz/">
+    <meta property="og:url" content="https://miftik.xyz">
     <meta property="og:title" content="MiftikCZ web">
     <meta property="og:description" content="Oficiální stránka vývojáře MiftikCZ kde najdeš moje projekty!">
     <meta property="og:image" content="https://miftik.xyz/thumbnail.jpg">
@@ -207,14 +206,14 @@
         A moje jméno je <span class="sel">Kuba Kollár</span> ale přezdívka je MiftikCZ ;D
     </div>
 
-    <div class="bigwidget about bottomgap" id="about">
+    <article class="bigwidget about bottomgap" id="about">
         <p>Jsem programátor a vývojář webových stránek i aplikací. Zajímám se o sport, zvířata, přírodu a kódování.<br>
             Celkem mi jde <span class="sel">clonování webovek v HTML/CSS</span> podle připraveného designu.
         </p>
         <p>Pro vývoj webovek používám rád Preact.js a <span class="sel">čistý HTML/CSS/JS</span>. Myslím že nejvíce mi
             jde <span class="sel">JavaScript</span> ale preferuji TypeScript. Zvládnu trochu programovací jazyk rust.
             Umím také flutter (android app dev) a svelte.</p>
-    </div>
+    </article>
 
     <div class="bigwidget testik center bottomgap">
         <p>Mějte se fanfárově! :D</p>
@@ -229,9 +228,7 @@
         document.querySelectorAll("a").forEach(el => {
             el.target ||= "_blank"
         })
-
         const mobileNavbarShow = document.getElementById("mobile-navbar-show")
-
         document.querySelectorAll("[navbar-link]").forEach(el => {
             el.addEventListener("click", () => {
                 mobileNavbarShow.checked = false
@@ -239,5 +236,4 @@
         })
     </script>
 </body>
-
 </html>
