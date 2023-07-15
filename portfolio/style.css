@@ -98,7 +98,7 @@ header .back {
     width: 100%;
     max-width: 700px;
     height: fit-content;
-    background: #384956;
+    background: #1f1f29;
     color: #d3e5f5;
     overflow: hidden;
     border-radius: 0.7em;
@@ -127,7 +127,7 @@ header .back {
     padding-top: 0;
     display: block;
     text-align: center;
-    color: #8bceff;
+    color: #5383FC;
 }
 
 .popup .popis {
