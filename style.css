@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500&family=Fira+Sans:wght@400;500&display=swap');
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
     font-size: 25px;
     --fg: 211, 211, 215;
@@ -204,7 +208,7 @@ body>.projects .category>.projects a.novinka {
 
 body>.projects .category>.projects a.novinka::after {
     content: "novinka!";
-    z-index: 100;
+    z-index: 8;
     background: #7f7ab8;
     color: #201f23;
     padding: .1em .3em;
@@ -214,7 +218,24 @@ body>.projects .category>.projects a.novinka::after {
     font-size: .7em;
     rotate: 2deg;
     right: -1rem;
-    bottom: calc(100% - 1em);
+    /* bottom: calc(100% - 1em); */
+    top: -0.5em;
+}
+
+body>.projects .category>.projects a.good::after {
+    content: "👍";
+    z-index: 8;
+    background: #141419;
+    color: #201f23;
+    padding: .1em .3em;
+    border-radius: .8em;
+    display: inline-block;
+    position: absolute;
+    font-size: .8em;
+    rotate: 2deg;
+    right: -0.5em;
+    /* bottom: calc(100% - 1em); */
+    top: -0.5em;
 }
 
 body>.projects .category>.projects a:hover {
