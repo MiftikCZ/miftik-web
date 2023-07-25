@@ -96,20 +96,14 @@ b {
     text-shadow: 2px 2px 2px #000;
 }
 
-.rozdelovac-cont {
-    width: 100%;
-    display: inline-block;
-    text-align: center;
-}
-
-.rozdelovac {
-    display: inline-block;
+.divider {
     margin-top: 24px;
     margin-bottom: 24px;
     background: #ffffff05;
     border-radius: 4px;
     height: 4px;
-    width: 90%;
+    width: 100%;
+    display: block;
 }
 
 a {
