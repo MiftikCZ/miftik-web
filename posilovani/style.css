@@ -24,16 +24,13 @@ body {
 
 header {
     top: 0;
-    position: absolute;
+    position: relative;
     text-align: start;
     background: #0004;
     color: #fefeff;
     width: 100%;
     font-size: 32px;
     padding: 12px;
-}
-
-.title {
     font-family: "Poppins";
     font-style: italic;
     font-weight: 600;
@@ -43,7 +40,7 @@ header {
 main {
     display: inline-block;
     text-align: start;
-    margin-top: 110px;
+    margin-top: 30px;
     width: 95%;
 }
 
@@ -85,7 +82,13 @@ main {
 
 .odptext {
     color: #cfcfcf;
-    margin-left: 20px;
+}
+
+.odptext::before {
+    margin-right: 20px;
+    content:"-";
+    font-weight: 500;
+    color: hsl(var(--nat-h), 37%, 48%);
 }
 
 b {
@@ -113,10 +116,10 @@ b {
     color: hsl(var(--nat-h), 37%, 48%);
 }
 
-.tecka {
+/* .tecka {
     font-weight: 500;
     color: hsl(var(--nat-h), 37%, 48%);
-}
+} */
 
 .odpbutton {
     background: #fff5;
