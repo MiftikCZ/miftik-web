@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,400&family=Roboto:ital,wght@0,300;0,400;0,500;1,400;1,500&display=swap');
+
+* {
+    font-family: "Poppins";
+}
+
+:root {
+    --nat-h: 280;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poopins";
+    overflow-x: hidden;
+    text-align: center;
+    background: hsl(calc(var(--nat-h) + 30), 17%, 6%);
+    color: #fefeff;
+}
+
+
+header {
+    top: 0;
+    position: relative;
+    display: block;
+    text-align: start;
+    background: #0004;
+    /* color: #fefeff; */
+    width: 100%;
+    font-size: 32px;
+    padding: 12px;
+    font-family: "Poppins";
+    font-style: italic;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+header .text::before {
+    content: "MiftikBlog ";
+    color: hsl(var(--nat-h), 37%, 48%);
+}
+
+main {
+    display: inline-block;
+    text-align: start;
+    margin-top: 30px;
+    width: 100%;
+    max-width: 900px;
+}
+
+h2,h3,h1 {
+    margin-left: 50px;
+}
+
+h2 {
+    font-size: 28px;
+    color: #fefeff;
+    color: hsl(var(--nat-h), 28%, 62%);
+}
+
+img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+p, ul, .napsal {
+    padding: 20px;
+    display: inline-block;
+    background: #0003;
+    border-radius: 40px;
+    width: 100%;
+}
+
+.material-symbols-outlined {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    vertical-align: middle;
+}
+
+li {
+    color: #cfcfcf;
+    list-style: none;
+}
+
+li::before {
+    margin-right: 20px;
+    content:"-";
+    font-weight: 500;
+    color: hsl(var(--nat-h), 37%, 48%);
+}
+
+b {
+    color: #fefeff;
+    text-shadow: 2px 2px 2px #000;
+}
+
+.rozdelovac-cont {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+}
+
+.rozdelovac {
+    display: inline-block;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    background: #ffffff05;
+    border-radius: 4px;
+    height: 4px;
+    width: 90%;
+}
+
+a {
+    color: hsl(var(--nat-h), 37%, 48%);
+}
+
+/* .tecka {
+    font-weight: 500;
+    color: hsl(var(--nat-h), 37%, 48%);
+} */
+
+.odpbutton {
+    background: #fff5;
+    border: none;
+    height: 100%;
+    display: inline-block;
+    position: relative;
+}
+
+.smalltxt {
+    font-size: 16px;
+    color: #acacac;
+}
+
+.sm {
+    font-size: 15px;
+    color: #fff5;
+}
