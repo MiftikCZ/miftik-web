@@ -1,4 +1,5 @@
 ## MiftikCZ web
+[![Netlify Status](https://api.netlify.com/api/v1/badges/09ea59e6-3f20-44a9-bff4-846ab556c7b6/deploy-status)](https://app.netlify.com/sites/miftik-web/deploys)
 Official repo for miftik.tk files
 
 ### Useful files from root directory
